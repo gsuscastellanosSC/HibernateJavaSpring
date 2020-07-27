@@ -12,7 +12,7 @@ import javax.servlet.http.HttpServletResponse;
 /**
  * Servlet implementation class Servletlogin
  */
-@WebServlet(description = "Servlet para manejo de peticiones de login", urlPatterns = { "/Servletlogin" })
+@WebServlet(description = "Servlet para manejo de peticiones de login", urlPatterns = { "/abc123" })
 public class Servletlogin extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
