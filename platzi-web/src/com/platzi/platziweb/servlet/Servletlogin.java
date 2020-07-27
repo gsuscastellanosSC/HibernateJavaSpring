@@ -1,6 +1,8 @@
 package com.platzi.platziweb.servlet;
 
 import java.io.IOException;
+import java.io.PrintWriter;
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -27,7 +29,20 @@ public class Servletlogin extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		response.getWriter().append("Served at: ").append(request.getContextPath());
-		
+		//Procesar las entradas
+		String usuario = request.getParameter("usuario");
+		String empresa = request.getParameter("empresa");
+		PrintWriter escritor = response.getWriter();
+		if(usuario !=null && empresa != null) {
+			if(empresa.equals("Platzi")) {
+				escritor.println("Bienvenido a platzi");
+			}else {
+				escritor.println("Bienvenido...");
+			}
+		}else {
+			escritor.println("Usuario o contraseña incorrecto!!");
+		}
+		escritor.close();
 	}
 
 	/**
