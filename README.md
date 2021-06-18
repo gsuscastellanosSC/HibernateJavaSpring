@@ -8,10 +8,12 @@
    ¿Qué es una Aplicación Empresarial?
 # Class#4
    ¿Cómo funcionan las Aplicaciones Web?
-# Class#5 
+# Class#5
    Servidores Web vs Servidores de Aplicación
 # Class#6
    Instalar ambiente de desarrollo Mac
+# Class#7
+   Patrón de Arquitectura MVC
 # Links
    OmniDB:
       https://omnidb.org/
