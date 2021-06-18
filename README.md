@@ -2,8 +2,10 @@
    https://platzi.com/clases/jee/
 # Class#1
    Instalar ambiente de desarrollo en Windows
-# Class#2   
+# Class#2
    Curso de Hibernate y Java Spring 2018
+# Class#3
+   ¿Qué es una Aplicación Empresarial?
 # Links
    OmniDB:
       https://omnidb.org/
