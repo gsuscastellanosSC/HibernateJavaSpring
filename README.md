@@ -19,6 +19,10 @@
       Los Servlets son componentes o clases de Java del lado del servidor web que permiten procesar peticiones del cliente y responderlas a través de la generación de contenido dinámico o redireccionarlas a otros recursos. Los Servlets de tipo:
          => HttpServlet son los más utilizados ya que funcionan con el protocolo HTTP (lo encontramos en el paquete javax.servlet.http) pero, también podemos utilizar los
          => GenericServlets si necesitamos cualquier otro protocolo (el paquete es javax.servlet).
+# Class#9      
+   Utilización del Servlet
 # Links
+   platziWeb:
+      http://127.0.0.1:8080/platziWeb/ServletLogin?usuario=platzi&empresa=platzi&empresa=qwerty
    OmniDB:
       https://omnidb.org/
