@@ -76,10 +76,10 @@
       Existen diferentes ORMs como Hibernate, EclipseLink, ToplLink o Datanucleos. Una de las principales características por la que muchas aplicaciones las utilizan es que pueden mapear un modelo relacional a un modelo de objetos, l que nos          permite persistir la información y gestionar nuestros datos como si fueran objetos.
       Dicho en otras palabras:
       Los ORMs nos permiten trabajar con bases de datos relacionales usando programación orientada a objetos. JPA es la propuesta estándar de Java que deben implementar los ORMs para interactuar con la base de datos por medio d objetos. Y          todos estos ORMs utilizan JDBC para leer y escribir en la base de datos.
-# Class#17      
+# Class#17
    Spring Data, Spring Data JPA
 # Bash
-   **Run spring:**
+   *** Run spring: *** 
       mvn clean install spring-boot:run
 # Links
    # Spring Initializr:
