@@ -50,10 +50,18 @@
 
    Configuración Simple:
       Spring Boot soporta cada una de las características de los mòdulos de Spring como son Spring MVC,SpringData,          Spring Rest, Spring Security y lo hace de una manera simple, a través dedependenciassimples una sola por cada          tecnologìa. Adicionalmente la forma de construirla y configurarla essimple y óptima de manera online a través         de la herramienta Spring Initializr.
-      
+
    Características de Producción Listas:
       Spring Boot viene con características de configuración predefinidas para ambientes de producciónAdicionalmente        se puede configurar características de acuerdo a la ambiente a través deSpringProfiles.
+# Class#14 
+      Crear, cargar y configurar una aplicación en Spring Boot:
+         Spring Boot es una infraestructura que nos proporciona un conjunto de herramientas para construir y desplegar aplicaciones muy rápidamente. En nuestro caso, vamos a utilizar Spring Data JPA para manejar la persistencia y Spring Rest para crear una API que podemos utilizar para interactuar desde la capa de vista. Los requerimientos para construir el proyecto de la clase (una aplicación de reservas para hoteles) son el JDK, Maven y un IDE.
+# Bash
+   Run spring:
+      mvn clean install spring-boot:run
 # Links
+   Spring Initializr:
+      https://start.spring.io/
    platziWeb:
       - http://127.0.0.1:9090/platziweb/login.jsp
       - http://127.0.0.1:9090/platziweb/ServletLogin?usuario=platzi&empresa=platzi&empresa=qwerty
