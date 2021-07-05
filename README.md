@@ -25,6 +25,9 @@
    Características y práctica de JSP
    Las JSP (JavaServer Page) son componentes del lado del servidor que nos permiten desarrollar páginas web con soporte para contenido dinámico gracias a la inclusión de código Java en código html utilizando los Tags (una sintaxis especial que podemos utilizar en cualquier momento para añadir contenido dinámico: <% for(1=0; i<10: i++) %>).
    El desafío de esta clase es crear una página con JSP para visualizar la información de los usuarios que se registran.
+# Class#11
+   Arquitectura de las Aplicaciones Web
+   Así como la construcción de casas, el proceso de construcción de las aplicaciones consiste en 3 etapas: definición de los todos requerimientos y características (lenguaje de programación, tipo de base de datos, practicas de seguridad a implementar, etc), después, el diseño de los componentes y cómo se van a comunicar entre ellos (para darle una vista previa al usuario de cómo vamos a desarrollar la aplicación) y, por ultimo, el desarrollo de nuestra aplicación en base a las decisiones de las etapas anteriores.
 # Links
    platziWeb:
       - http://127.0.0.1:9090/platziweb/login.jsp
