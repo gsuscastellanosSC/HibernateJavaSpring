@@ -63,14 +63,29 @@
       La estructura de nuestra aplicación parte de un paquete base llamado com.platzi.ereservation que hemos creado gracias a la herramienta de construcción y lo hemos cargado al Spring Tool Suite. Ahora, vamos configurar los paquetes para las capas de modelo, negocio y vista. Recuerda que puedes utilizar la sección de Package Explorer, seleccionar nuestro paquete base, utilizar el atajo Ctrl + N, seleccionar la opción Package y automáticamente vamos a generar el nombre del paquete que podemos modificar según nuestras necesidades (en nuestro caso, los paquetes son com.platzi.ereservation.modelo, com.platzi.ereservation.repository, com.platzi.ereservation.resources, com.platzi.ereservation.services).
 
       El desafío de esta clase es crear un proyecto con Spring Boot, cargarlo en el IDE de desarrollo de Spring Tool Suite y adjuntar una captura de pantalla en la sección de comentarios. No olvides que, si todo te fue bien, puedes ayudar a nuestros compañeros con problemas para solucionar el reto.
+# Class#16
+   Persistencia de Objetos:
+      La información es nuestro bien más preciado e importante, ya que en base a esta gira el desarrollo de nuestro negocio, se toman decisiones y automatizamos procesos.
+      En el mundo del desarrollo de software, cualquier aplicación o plataforma – independientemente de la tecnología – necesita almacenar su información. Y esta debe poder ser recuperada en cualquier momento.
+      A este proceso de almacenar información y poder recuperarla en cualquier momento – de forma íntegra e independientemente el medio de almacenamiento – lo conocemos con el nombre de persistencia.
+      Existen varios mecanismos de persistencia: archivos planos, archivos binarios, base de datos relacionales, base de datos documentales, entre otros.
+      A nivel de especificaciones o tecnologías utilizadas en Java para poder persistir información, tenemos las siguientes herramientas:
+      JDBC, JPA y ORM
+      JDBC es un estándar para enviar solicitudes a la base de datos y obtener información, un conjunto de clases que gestionan la información de la base de datos de forma natural (utilizando sentencias DML y DDL).
+      JPA es la propuesta estándar de Java sobre cómo convertir los objetos de Java en instrucciones para el manejador de la base de datos. Es por esto que existen muchas herramientas que implementan JPA para ayudarnos a manejar l capa de          persistencia de nuestras aplicaciones: los ORMs.
+      Existen diferentes ORMs como Hibernate, EclipseLink, ToplLink o Datanucleos. Una de las principales características por la que muchas aplicaciones las utilizan es que pueden mapear un modelo relacional a un modelo de objetos, l que nos          permite persistir la información y gestionar nuestros datos como si fueran objetos.
+      Dicho en otras palabras:
+      Los ORMs nos permiten trabajar con bases de datos relacionales usando programación orientada a objetos. JPA es la propuesta estándar de Java que deben implementar los ORMs para interactuar con la base de datos por medio d objetos. Y          todos estos ORMs utilizan JDBC para leer y escribir en la base de datos.
+# Class#17      
+   Spring Data, Spring Data JPA
 # Bash
-   Run spring:
+   **Run spring:**
       mvn clean install spring-boot:run
 # Links
-   Spring Initializr:
+   # Spring Initializr:
       https://start.spring.io/
-   platziWeb:
+   # platziWeb:
       - http://127.0.0.1:9090/platziweb/login.jsp
       - http://127.0.0.1:9090/platziweb/ServletLogin?usuario=platzi&empresa=platzi&empresa=qwerty
-   OmniDB:
+   # OmniDB:
       https://omnidb.org/
