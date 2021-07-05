@@ -38,6 +38,21 @@
       Programación declarativa
       Reducción de código boilerplate
       Arquitectura en capas
+# Class#13
+   Características de Spring Boot:
+      Spring Boot es una tecnología que permite optimizar los tiempos de desarrollo en la creación y despliegue de proyectos permitiéndonos a los desarrolladores enfocarnos en el desarrollo de la aplicación. Entre las características que tiene Spring Boot se puede mencionar las siguientes:
+
+   Aplicaciones Standalone:
+      Una aplicación en Spring Boot es empaquetada en un JAR con todas las dependencias para poder ejecutarsesin          necesidad de instalar un servidor web. Permitiendo funcionar como una aplicaciónstandalone.
+
+   Servidores Embebidos:
+      Spring Boot soporta a Tomcat y Jetty como servidores embebidos.
+
+   Configuración Simple:
+      Spring Boot soporta cada una de las características de los mòdulos de Spring como son Spring MVC,SpringData,          Spring Rest, Spring Security y lo hace de una manera simple, a través dedependenciassimples una sola por cada          tecnologìa. Adicionalmente la forma de construirla y configurarla essimple y óptima de manera online a través         de la herramienta Spring Initializr.
+      
+   Características de Producción Listas:
+      Spring Boot viene con características de configuración predefinidas para ambientes de producciónAdicionalmente        se puede configurar características de acuerdo a la ambiente a través deSpringProfiles.
 # Links
    platziWeb:
       - http://127.0.0.1:9090/platziweb/login.jsp
