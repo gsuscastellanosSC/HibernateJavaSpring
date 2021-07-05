@@ -23,6 +23,6 @@
    Utilización del Servlet
 # Links
    platziWeb:
-      http://127.0.0.1:8080/platziWeb/ServletLogin?usuario=platzi&empresa=platzi&empresa=qwerty
+      http://127.0.0.1:9090/platziweb/ServletLogin?usuario=platzi&empresa=platzi&empresa=qwerty
    OmniDB:
       https://omnidb.org/
