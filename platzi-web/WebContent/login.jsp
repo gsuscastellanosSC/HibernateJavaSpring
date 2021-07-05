@@ -9,7 +9,7 @@
 <body>
 	<!-- 	JSP -->
 	<%!int i = 0;%>
-	<form method="get" action="./abc123">
+	<form method="get" action="./nameHide">
 		<table>
 			<tr>
 				<td><label>Usuario</label></td>

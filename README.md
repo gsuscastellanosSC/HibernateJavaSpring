@@ -19,10 +19,15 @@
       Los Servlets son componentes o clases de Java del lado del servidor web que permiten procesar peticiones del cliente y responderlas a través de la generación de contenido dinámico o redireccionarlas a otros recursos. Los Servlets de tipo:
          => HttpServlet son los más utilizados ya que funcionan con el protocolo HTTP (lo encontramos en el paquete javax.servlet.http) pero, también podemos utilizar los
          => GenericServlets si necesitamos cualquier otro protocolo (el paquete es javax.servlet).
-# Class#9      
+# Class#9
    Utilización del Servlet
+# Class#10
+   Características y práctica de JSP
+   Las JSP (JavaServer Page) son componentes del lado del servidor que nos permiten desarrollar páginas web con soporte para contenido dinámico gracias a la inclusión de código Java en código html utilizando los Tags (una sintaxis especial que podemos utilizar en cualquier momento para añadir contenido dinámico: <% for(1=0; i<10: i++) %>).
+   El desafío de esta clase es crear una página con JSP para visualizar la información de los usuarios que se registran.
 # Links
    platziWeb:
-      http://127.0.0.1:9090/platziweb/ServletLogin?usuario=platzi&empresa=platzi&empresa=qwerty
+      - http://127.0.0.1:9090/platziweb/login.jsp
+      - http://127.0.0.1:9090/platziweb/ServletLogin?usuario=platzi&empresa=platzi&empresa=qwerty
    OmniDB:
       https://omnidb.org/
