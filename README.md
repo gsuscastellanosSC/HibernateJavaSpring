@@ -53,9 +53,16 @@
 
    Características de Producción Listas:
       Spring Boot viene con características de configuración predefinidas para ambientes de producciónAdicionalmente        se puede configurar características de acuerdo a la ambiente a través deSpringProfiles.
-# Class#14 
+# Class#14
       Crear, cargar y configurar una aplicación en Spring Boot:
          Spring Boot es una infraestructura que nos proporciona un conjunto de herramientas para construir y desplegar aplicaciones muy rápidamente. En nuestro caso, vamos a utilizar Spring Data JPA para manejar la persistencia y Spring Rest para crear una API que podemos utilizar para interactuar desde la capa de vista. Los requerimientos para construir el proyecto de la clase (una aplicación de reservas para hoteles) son el JDK, Maven y un IDE.
+# Class#15
+   Crear la estructura del proyecto
+      Seguimos trabajando con el patrón de diseño MVP (la capa de modelo para trabajar con la base de datos, la capa de negocio para toda la lógica de la aplicación y la capa de vista para el frontend o capa interactiva con el usuario).
+
+      La estructura de nuestra aplicación parte de un paquete base llamado com.platzi.ereservation que hemos creado gracias a la herramienta de construcción y lo hemos cargado al Spring Tool Suite. Ahora, vamos configurar los paquetes para las capas de modelo, negocio y vista. Recuerda que puedes utilizar la sección de Package Explorer, seleccionar nuestro paquete base, utilizar el atajo Ctrl + N, seleccionar la opción Package y automáticamente vamos a generar el nombre del paquete que podemos modificar según nuestras necesidades (en nuestro caso, los paquetes son com.platzi.ereservation.modelo, com.platzi.ereservation.repository, com.platzi.ereservation.resources, com.platzi.ereservation.services).
+
+      El desafío de esta clase es crear un proyecto con Spring Boot, cargarlo en el IDE de desarrollo de Spring Tool Suite y adjuntar una captura de pantalla en la sección de comentarios. No olvides que, si todo te fue bien, puedes ayudar a nuestros compañeros con problemas para solucionar el reto.
 # Bash
    Run spring:
       mvn clean install spring-boot:run
