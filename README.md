@@ -78,9 +78,16 @@
       Los ORMs nos permiten trabajar con bases de datos relacionales usando programación orientada a objetos. JPA es la propuesta estándar de Java que deben implementar los ORMs para interactuar con la base de datos por medio d objetos. Y          todos estos ORMs utilizan JDBC para leer y escribir en la base de datos.
 # Class#17
    Spring Data, Spring Data JPA
+# Class#18
+   Iniciar la base de datos postgres utilizando Docker
+      Vamos a ejecutar los siguientes comandos para instalar la base de datos (en cualquier sistema operativo) utilizando Docker y OmniDB:
 # Bash
    *** Run spring: *** 
       mvn clean install spring-boot:run
+   *** Download postgres:9.6.6-alpine ***
+      docker pull postgres:9.6.6-alpine
+   *** Up postgres:9.6.6-alpine ***
+      docker run -d --name postgres -p 5432:5432 -e POSTGRES_PASSWORD=platzi postgres:9.6.6-alpine
 # Links
    # Spring Initializr:
       https://start.spring.io/
