@@ -87,6 +87,11 @@
    Install lombok in sts:
       1. Edit into last line of the file SpringToolSuite4.ini:
          -javaagent:C:\Program Files\sts-4.11.0.RELEASE\lombok.jar
+# Class#20
+   Mapear Tablas de la Base de Datos
+      El proceso de mapear las tablas de la base de datos a clases en nuestra capa de modelo se conoce como ORM (Object Relational Mapping), vamos a convertir las columnas de las tablas en atributos de las clases y las relaciones entre tablas pasan a ser atributos de tipo objeto o lista de objetos.
+      
+      Antes de comenzar debemos configurar las dependencias para la base de datos que vamos a utilizar y el manejo/soporte del administrador de capas de persistencia (JPA) en el archivo pom.xml.
 # Bash
    Run spring:
       mvn clean install spring-boot:run
