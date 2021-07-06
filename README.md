@@ -81,18 +81,27 @@
 # Class#18
    Iniciar la base de datos postgres utilizando Docker
       Vamos a ejecutar los siguientes comandos para instalar la base de datos (en cualquier sistema operativo) utilizando Docker y OmniDB:
+# Class#19
+   Optimizar Pojos con Lombok
+      Los POJOs (Plain Old Java Objects) son clases simples de Java que no dependen de un framework en especial y Lombok es una librería que nos permite eliminar código repetitivo (Getters y Setters) que todavía estamos obligados a escribir cuando trabajamos con Java.
+   Install lombok in sts:
+      1. Edit into last line of the file SpringToolSuite4.ini:
+         -javaagent:C:\Program Files\sts-4.11.0.RELEASE\lombok.jar
 # Bash
-   *** Run spring: *** 
+   Run spring:
       mvn clean install spring-boot:run
-   *** Download postgres:9.6.6-alpine ***
+   Download postgres:9.6.6-alpine:
       docker pull postgres:9.6.6-alpine
-   *** Up postgres:9.6.6-alpine ***
+   Up postgres:9.6.6-alpine
       docker run -d --name postgres -p 5432:5432 -e POSTGRES_PASSWORD=platzi postgres:9.6.6-alpine
 # Links
-   # Spring Initializr:
+   Lombok:
+      - https://projectlombok.org/download
+      - https://projectlombok.org/mavenrepo/
+   Spring Initializr:
       https://start.spring.io/
-   # platziWeb:
+   platziWeb:
       - http://127.0.0.1:9090/platziweb/login.jsp
       - http://127.0.0.1:9090/platziweb/ServletLogin?usuario=platzi&empresa=platzi&empresa=qwerty
-   # OmniDB:
+   OmniDB:
       https://omnidb.org/
