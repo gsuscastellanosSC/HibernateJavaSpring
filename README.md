@@ -95,8 +95,11 @@
 # Class#21
    Configurar la persistencia con Hibernate
       Ahora que mapeamos las tablas de nuestra base de datos a clases en nuestra capa de modelo (con los archivos Cliente.java y Reserva.java), vamos a crear el archivo src/main/resources/application.yaml y configurar la información para conectarnos a la base de datos.
-# Class#22   
+# Class#22
    Añadir JPA Repository
+# Class#23
+   Implementar las operaciones de Consulta con JPA Repository
+      Spring Data cuenta con soporte para realizar consultas personalizadas basado en los atributos de la clase base que se generan de forma automática en el tiempo de ejecución (Query Generation Strategy). También soporta otro tipo de consultas basadas en JPQL (Java Persistence Query Language) como @Query y @NamedQuery.
 # Bash
    Run spring:
       mvn clean install spring-boot:run
