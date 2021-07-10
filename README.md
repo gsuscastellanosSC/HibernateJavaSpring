@@ -100,6 +100,9 @@
 # Class#23
    Implementar las operaciones de Consulta con JPA Repository
       Spring Data cuenta con soporte para realizar consultas personalizadas basado en los atributos de la clase base que se generan de forma automática en el tiempo de ejecución (Query Generation Strategy). También soporta otro tipo de consultas basadas en JPQL (Java Persistence Query Language) como @Query y @NamedQuery.
+# Class#24
+   Implementar servicio de negocio para las operaciones CRUD
+      Seguimos trabajando en la parte de negocio, ahora que definimos nuestro repositorio, el siguiente paso la parte de servicios (con el paquete com.platzi.ereservation.negocio.service), vamos a trabajar algunas clases para exponer estas operaciones en la capa de negocio. Recuerda que debemos indicar que las clases son un bean de la capa de negocios utilizando la anotación @Service.
 # Bash
    Run spring:
       mvn clean install spring-boot:run
