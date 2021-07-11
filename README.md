@@ -107,6 +107,9 @@
    Manejar la transaccionalidad de un servicio de negocio
       Las transacciones son el conjunto de operaciones que afectan la base de datos (updates o deletes, no se recomienda realizar consultas de solo lectura) y se ejecutan en bloque, es decir, se ejecutan todas con éxito (commit) o no ejecutamos ninguna (rollback). Las transacciones empiezan y terminan a nivel de servicio y nunca a nivel de capa de datos, para indicar que una clase o método será transaccional utilizamos a anotación @Transactional.
          El desafío de esta clase es completar los servicios de negocio para las tablas restantes.
+# Class#26
+   Instalar y configurar Swagger
+      Swagger es una herramienta que nos permite documentar y ejecutar APIs Web de forma interactiva, provee una manera muy sencilla de implementar clientes un múltiples lenguajes. Para configurar esta herramienta junto con Spring, vamos a utilizar el proyecto Spring Fox configurando las dependencias en el archivo pom.xml.
 # Bash
    Run spring:
       mvn clean install spring-boot:run

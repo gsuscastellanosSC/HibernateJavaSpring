@@ -20,10 +20,11 @@ import com.platzi.ereservation.negocio.repository.ReservaRepository;
 @Service
 @Transactional(readOnly = true)
 public class ReservaService {
-	public final ReservaRepository RESERVA_REPOSITORY;
+	
+	private final ReservaRepository reservaRepository;
 
-	public ReservaService(ReservaRepository RESERVA_REPOSITORY) {
-		this.RESERVA_REPOSITORY = RESERVA_REPOSITORY;
+	public ReservaService(ReservaRepository reservaRepository) {
+		this.reservaRepository = reservaRepository;
 	}
 
 	/*
@@ -35,9 +36,9 @@ public class ReservaService {
 	 */
 	@Transactional
 	public Reserva create(Reserva reserva) {
-		return this.RESERVA_REPOSITORY.save(reserva);
+		return this.reservaRepository.save(reserva);
 	}
-	
+
 	/*
 	 * Método para actualizar una reserva
 	 * 
@@ -47,9 +48,9 @@ public class ReservaService {
 	 */
 	@Transactional
 	public Reserva update(Reserva reserva) {
-		return this.RESERVA_REPOSITORY.save(reserva);
+		return this.reservaRepository.save(reserva);
 	}
-	
+
 	/*
 	 * Método para eliminar una reserva
 	 * 
@@ -59,17 +60,45 @@ public class ReservaService {
 	 */
 	@Transactional
 	public void delete(Reserva reserva) {
-		this.RESERVA_REPOSITORY.delete(reserva);
+		this.reservaRepository.delete(reserva);
 	}
 
-	/*
-	 * Método para consultar una reserva por fecha
-	 * 
-	 * @param reserva
-	 * 
+	/**
+	 * Método para consultar todos las reservas
 	 * @return
 	 */
-	public List<Reserva> findByDate(Date fechaInicio, Date fechaSalida) {
-		return this.RESERVA_REPOSITORY.find(fechaInicio, fechaSalida);
+	public List<Reserva> findAll(){
+		return this.reservaRepository.findAll();
+	}
+	
+	/**
+	 * Método para consultar las reservas por un cliente en especÃ­fico
+	 * 
+	 * @param cliente
+	 * @return
+	 */
+	public List<Reserva> findByCliente(Cliente cliente){
+		return this.reservaRepository.findByCliente(cliente);
+	}
+	
+	/**
+	 * Método para consultar las reservas por la fecha de ingreso en
+	 * base a un rango de fechas
+	 * 
+	 * @param fechaInicio
+	 * @param fechaSalida
+	 * @return
+	 */
+	public List<Reserva> find(Date fechaInicio, Date fechaSalida){
+		return this.reservaRepository.find(fechaInicio, fechaSalida);
+	}
+
+	/**
+	 * Método para consultar una reserva por su codigo de reserva
+	 * @param codigoReserva
+	 * @return
+	 */
+	public Reserva findByCodigoRes(String codigoReserva) {
+		return this.reservaRepository.findByCodigoRes(codigoReserva);
 	}
 }
