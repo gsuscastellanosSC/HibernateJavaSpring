@@ -103,6 +103,10 @@
 # Class#24
    Implementar servicio de negocio para las operaciones CRUD
       Seguimos trabajando en la parte de negocio, ahora que definimos nuestro repositorio, el siguiente paso la parte de servicios (con el paquete com.platzi.ereservation.negocio.service), vamos a trabajar algunas clases para exponer estas operaciones en la capa de negocio. Recuerda que debemos indicar que las clases son un bean de la capa de negocios utilizando la anotación @Service.
+# Class#25
+   Manejar la transaccionalidad de un servicio de negocio
+      Las transacciones son el conjunto de operaciones que afectan la base de datos (updates o deletes, no se recomienda realizar consultas de solo lectura) y se ejecutan en bloque, es decir, se ejecutan todas con éxito (commit) o no ejecutamos ninguna (rollback). Las transacciones empiezan y terminan a nivel de servicio y nunca a nivel de capa de datos, para indicar que una clase o método será transaccional utilizamos a anotación @Transactional.
+         El desafío de esta clase es completar los servicios de negocio para las tablas restantes.
 # Bash
    Run spring:
       mvn clean install spring-boot:run
