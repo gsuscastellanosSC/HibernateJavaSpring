@@ -111,11 +111,11 @@
    * Los servicios web son aplicaciones construidas con el fin de poder intercambiar información con otras aplicaciones utilizando protocolos estandarizados como SOAP y REST (utilizando los formatos XML y JSON, respectivamente) sin que los usuarios se enteren de que están navegando entre aplicaciones o servicios diferentes. Este concepto lo conocemos como interoperabilidad.
    * Por otra parte, Spring Rest es una manera de construir servicios web con Spring utilizando la arquitectura REST y aprovechando la experiencia de Spring MVC. Para configurar los servicios web utilizamos la anotación @RestCotroller en la clase base, la cual combina los comportamientos de las anotaciones @Controller y @ResponseBody.```
 ## ✅Class#28⚡️
-   _Implementar las operaciones REST para crear y actualizar información_
+   ```Implementar las operaciones REST para crear y actualizar información```
 ## ✅Class#29⚡️
-   _Implementar las operaciones REST para eliminar y consultar información_
+   ```Implementar las operaciones REST para eliminar y consultar información```
 ## ✅Class#30⚡️
-   _Documentación de los servicios REST con Swagger_
+   ```Documentación de los servicios REST con Swagger```
 ## 🚧Bash🚨
    ```Run spring:```
    * mvn clean install spring-boot:run
