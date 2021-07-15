@@ -56,12 +56,11 @@
    ```Crear, cargar y configurar una aplicación en Spring Boot:```
    * Spring Boot es una infraestructura que nos proporciona un conjunto de herramientas para construir y desplegar aplicaciones muy rápidamente. En nuestro caso, vamos a utilizar Spring Data JPA para manejar la persistencia y Spring Rest para crear una API que podemos utilizar para interactuar desde la capa de vista. Los requerimientos para construir el proyecto de la clase (una aplicación de reservas para hoteles) son el JDK, Maven y un IDE.
 ## ⚡️Class#15✅
-   _Crear la estructura del proyecto_
-      ```Seguimos trabajando con el patrón de diseño MVP (la capa de modelo para trabajar con la base de datos, la capa de negocio para toda la lógica de la aplicación y la capa de vista para el frontend o capa interactiva con el usuario).
+   ```Crear la estructura del proyecto```
+   * Seguimos trabajando con el patrón de diseño MVP (la capa de modelo para trabajar con la base de datos, la capa de negocio para toda la lógica de la aplicación y la capa de vista para el frontend o capa interactiva con el usuario).
+   * La estructura de nuestra aplicación parte de un paquete base llamado com.platzi.ereservation que hemos creado gracias a la herramienta de construcción y lo hemos cargado al Spring Tool Suite. Ahora, vamos configurar los paquetes para las capas de modelo, negocio y vista. Recuerda que puedes utilizar la sección de Package Explorer, seleccionar nuestro paquete base, utilizar el atajo Ctrl + N, seleccionar la opción Package y automáticamente vamos a generar el nombre del paquete que podemos modificar según nuestras necesidades (en nuestro caso, los paquetes son com.platzi.ereservation.modelo, com.platzi.ereservation.repository, com.platzi.ereservation.resources, com.platzi.ereservation.services).
 
-      La estructura de nuestra aplicación parte de un paquete base llamado com.platzi.ereservation que hemos creado gracias a la herramienta de construcción y lo hemos cargado al Spring Tool Suite. Ahora, vamos configurar los paquetes para las capas de modelo, negocio y vista. Recuerda que puedes utilizar la sección de Package Explorer, seleccionar nuestro paquete base, utilizar el atajo Ctrl + N, seleccionar la opción Package y automáticamente vamos a generar el nombre del paquete que podemos modificar según nuestras necesidades (en nuestro caso, los paquetes son com.platzi.ereservation.modelo, com.platzi.ereservation.repository, com.platzi.ereservation.resources, com.platzi.ereservation.services).
-
-      El desafío de esta clase es crear un proyecto con Spring Boot, cargarlo en el IDE de desarrollo de Spring Tool Suite y adjuntar una captura de pantalla en la sección de comentarios. No olvides que, si todo te fue bien, puedes ayudar a nuestros compañeros con problemas para solucionar el reto.```
+   * El desafío de esta clase es crear un proyecto con Spring Boot, cargarlo en el IDE de desarrollo de Spring Tool Suite y adjuntar una captura de pantalla en la sección de comentarios. No olvides que, si todo te fue bien, puedes ayudar a nuestros compañeros con problemas para solucionar el reto.```
 ## ⚡️Class#16✅
    ```Persistencia de Objetos:```
    *  La información es nuestro bien más preciado e importante, ya que en base a esta gira el desarrollo de nuestro negocio, se toman decisiones y automatizamos procesos. En el mundo del desarrollo de software, cualquier aplicación o plataforma – independientemente de la tecnología – necesita almacenar su información. Y esta debe poder ser recuperada en cualquier momento. A este proceso de almacenar información y poder recuperarla en cualquier momento – de forma íntegra e independientemente el medio de almacenamiento – lo conocemos con el nombre de persistencia.
@@ -69,48 +68,48 @@
    * A nivel de especificaciones o tecnologías utilizadas en Java para poder persistir información, tenemos las siguientes herramientas:
    
    ```JDBC, JPA y ORM```
-      * JDBC es un estándar para enviar solicitudes a la base de datos y obtener información, un conjunto de clases que gestionan la información de la base de datos de forma natural (utilizando sentencias DML y DDL).
-      * JPA es la propuesta estándar de Java sobre cómo convertir los objetos de Java en instrucciones para el manejador de la base de datos. Es por esto que existen muchas herramientas que implementan JPA para ayudarnos a manejar l capa de          persistencia de nuestras aplicaciones: los ORMs.
-      * Existen diferentes ORMs como Hibernate, EclipseLink, ToplLink o Datanucleos. Una de las principales características por la que muchas aplicaciones las utilizan es que pueden mapear un modelo relacional a un modelo de objetos, l que nos          permite persistir la información y gestionar nuestros datos como si fueran objetos. Dicho en otras palabras:
-      Los ORMs nos permiten trabajar con bases de datos relacionales usando programación orientada a objetos. JPA es la propuesta estándar de Java que deben implementar los ORMs para interactuar con la base de datos por medio d objetos. Y          todos estos ORMs utilizan JDBC para leer y escribir en la base de datos.```
+   * JDBC es un estándar para enviar solicitudes a la base de datos y obtener información, un conjunto de clases que gestionan la información de la base de datos de forma natural (utilizando sentencias DML y DDL).
+   * JPA es la propuesta estándar de Java sobre cómo convertir los objetos de Java en instrucciones para el manejador de la base de datos. Es por esto que existen muchas herramientas que implementan JPA para ayudarnos a manejar l capa de          persistencia de nuestras aplicaciones: los ORMs.
+   * Existen diferentes ORMs como Hibernate, EclipseLink, ToplLink o Datanucleos. Una de las principales características por la que muchas aplicaciones las utilizan es que pueden mapear un modelo relacional a un modelo de objetos, l que nos          permite persistir la información y gestionar nuestros datos como si fueran objetos. Dicho en otras palabras:
+      ```Los ORMs nos permiten trabajar con bases de datos relacionales usando programación orientada a objetos. JPA es la propuesta estándar de Java que deben implementar los ORMs para interactuar con la base de datos por medio d objetos. Y          todos estos ORMs utilizan JDBC para leer y escribir en la base de datos.```
 ## ⚡️Class#17✅
-   _Spring Data, Spring Data JPA_
+   ```Spring Data, Spring Data JPA```
 ## ⚡️Class#18✅
-   _Iniciar la base de datos postgres utilizando Docker_
-      ```Vamos a ejecutar los siguientes comandos para instalar la base de datos (en cualquier sistema operativo) utilizando Docker y OmniDB:```
+   ```Iniciar la base de datos postgres utilizando Docker```
+   * Vamos a ejecutar los siguientes comandos para instalar la base de datos (en cualquier sistema operativo) utilizando Docker y OmniDB:
 ## ⚡️Class#19✅
-   _Optimizar Pojos con Lombok_
-      ```Los POJOs (Plain Old Java Objects) son clases simples de Java que no dependen de un framework en especial y Lombok es una librería que nos permite eliminar código repetitivo (Getters y Setters) que todavía estamos obligados a escribir cuando trabajamos con Java.```
-   _Install lombok in sts:_
-      ```1. Edit into last line of the file SpringToolSuite4.ini:
-         -javaagent:C:\Program Files\sts-4.11.0.RELEASE\lombok.jar```
+   ```Optimizar Pojos con Lombok```
+   * Los POJOs (Plain Old Java Objects) son clases simples de Java que no dependen de un framework en especial y Lombok es una librería que nos permite eliminar código repetitivo (Getters y Setters) que todavía estamos obligados a escribir cuando trabajamos con Java.```
+   ```Install lombok in sts:```
+   * Edit into last line of the file SpringToolSuite4.ini:
+         ```-javaagent:C:\Program Files\sts-4.11.0.RELEASE\lombok.jar```
 ## ⚡️Class#20✅
-   _Mapear Tablas de la Base de Datos_
-      ```El proceso de mapear las tablas de la base de datos a clases en nuestra capa de modelo se conoce como ORM (Object Relational Mapping), vamos a convertir las columnas de las tablas en atributos de las clases y las relaciones entre tablas pasan a ser atributos de tipo objeto o lista de objetos.
+   ```Mapear Tablas de la Base de Datos```
+   * El proceso de mapear las tablas de la base de datos a clases en nuestra capa de modelo se conoce como ORM (Object Relational Mapping), vamos a convertir las columnas de las tablas en atributos de las clases y las relaciones entre tablas pasan a ser atributos de tipo objeto o lista de objetos.
 
-      Antes de comenzar debemos configurar las dependencias para la base de datos que vamos a utilizar y el manejo/soporte del administrador de capas de persistencia (JPA) en el archivo pom.xml.```
+   * Antes de comenzar debemos configurar las dependencias para la base de datos que vamos a utilizar y el manejo/soporte del administrador de capas de persistencia (JPA) en el archivo pom.xml.
 ## ⚡️Class#21✅
-   _Configurar la persistencia con Hibernate_
-      ```Ahora que mapeamos las tablas de nuestra base de datos a clases en nuestra capa de modelo (con los archivos Cliente.java y Reserva.java), vamos a crear el archivo src/main/resources/application.yaml y configurar la información para conectarnos a la base de datos.```
+  ```Configurar la persistencia con Hibernate```
+   * Ahora que mapeamos las tablas de nuestra base de datos a clases en nuestra capa de modelo (con los archivos Cliente.java y Reserva.java), vamos a crear el archivo src/main/resources/application.yaml y configurar la información para conectarnos a la base de datos.```
 ## ⚡️Class#22✅
-   _Añadir JPA Repository_
+   ```Añadir JPA Repository```
 ## ⚡️Class#23✅
-   _Implementar las operaciones de Consulta con JPA Repository_
-      ```Spring Data cuenta con soporte para realizar consultas personalizadas basado en los atributos de la clase base que se generan de forma automática en el tiempo de ejecución (Query Generation Strategy). También soporta otro tipo de consultas basadas en JPQL (Java Persistence Query Language) como @Query y @NamedQuery.```
+   ```Implementar las operaciones de Consulta con JPA Repository```
+   * Spring Data cuenta con soporte para realizar consultas personalizadas basado en los atributos de la clase base que se generan de forma automática en el tiempo de ejecución (Query Generation Strategy). También soporta otro tipo de consultas basadas en JPQL (Java Persistence Query Language) como @Query y @NamedQuery.
 ## ⚡️Class#24✅
-   _Implementar servicio de negocio para las operaciones CRUD_
-      ```Seguimos trabajando en la parte de negocio, ahora que definimos nuestro repositorio, el siguiente paso la parte de servicios (con el paquete com.platzi.ereservation.negocio.service), vamos a trabajar algunas clases para exponer estas operaciones en la capa de negocio. Recuerda que debemos indicar que las clases son un bean de la capa de negocios utilizando la anotación @Service.```
+   ```Implementar servicio de negocio para las operaciones CRUD```
+   * Seguimos trabajando en la parte de negocio, ahora que definimos nuestro repositorio, el siguiente paso la parte de servicios (con el paquete com.platzi.ereservation.negocio.service), vamos a trabajar algunas clases para exponer estas operaciones en la capa de negocio. Recuerda que debemos indicar que las clases son un bean de la capa de negocios utilizando la anotación @Service.
 ## ⚡️Class#25✅
-   _Manejar la transaccionalidad de un servicio de negocio_
-      ```Las transacciones son el conjunto de operaciones que afectan la base de datos (updates o deletes, no se recomienda realizar consultas de solo lectura) y se ejecutan en bloque, es decir, se ejecutan todas con éxito (commit) o no ejecutamos ninguna (rollback). Las transacciones empiezan y terminan a nivel de servicio y nunca a nivel de capa de datos, para indicar que una clase o método será transaccional utilizamos a anotación @Transactional.
-         El desafío de esta clase es completar los servicios de negocio para las tablas restantes.```
+   ```Manejar la transaccionalidad de un servicio de negocio```
+   * Las transacciones son el conjunto de operaciones que afectan la base de datos (updates o deletes, no se recomienda realizar consultas de solo lectura) y se ejecutan en bloque, es decir, se ejecutan todas con éxito (commit) o no ejecutamos ninguna (rollback). Las transacciones empiezan y terminan a nivel de servicio y nunca a nivel de capa de datos, para indicar que una clase o método será transaccional utilizamos a anotación @Transactional.
+   * El desafío de esta clase es completar los servicios de negocio para las tablas restantes.
 ## ⚡️Class#26✅
-   _Instalar y configurar Swagger_
-      ```Swagger es una herramienta que nos permite documentar y ejecutar APIs Web de forma interactiva, provee una manera muy sencilla de implementar clientes un múltiples lenguajes. Para configurar esta herramienta junto con Spring, vamos a utilizar el proyecto Spring Fox configurando las dependencias en el archivo pom.xml.```
+   ```Instalar y configurar Swagger```
+   * Swagger es una herramienta que nos permite documentar y ejecutar APIs Web de forma interactiva, provee una manera muy sencilla de implementar clientes un múltiples lenguajes. Para configurar esta herramienta junto con Spring, vamos a utilizar el proyecto Spring Fox configurando las dependencias en el archivo pom.xml.
 ## ⚡️Class#27✅
-   _Características de los Servicios Web y Spring Rest_
-      ```Los servicios web son aplicaciones construidas con el fin de poder intercambiar información con otras aplicaciones utilizando protocolos estandarizados como SOAP y REST (utilizando los formatos XML y JSON, respectivamente) sin que los usuarios se enteren de que están navegando entre aplicaciones o servicios diferentes. Este concepto lo conocemos como interoperabilidad.
-      Por otra parte, Spring Rest es una manera de construir servicios web con Spring utilizando la arquitectura REST y aprovechando la experiencia de Spring MVC. Para configurar los servicios web utilizamos la anotación @RestCotroller en la clase base, la cual combina los comportamientos de las anotaciones @Controller y @ResponseBody.```
+   ```Características de los Servicios Web y Spring Rest```
+   * Los servicios web son aplicaciones construidas con el fin de poder intercambiar información con otras aplicaciones utilizando protocolos estandarizados como SOAP y REST (utilizando los formatos XML y JSON, respectivamente) sin que los usuarios se enteren de que están navegando entre aplicaciones o servicios diferentes. Este concepto lo conocemos como interoperabilidad.
+   * Por otra parte, Spring Rest es una manera de construir servicios web con Spring utilizando la arquitectura REST y aprovechando la experiencia de Spring MVC. Para configurar los servicios web utilizamos la anotación @RestCotroller en la clase base, la cual combina los comportamientos de las anotaciones @Controller y @ResponseBody.```
 ## ⚡️Class#28✅
    _Implementar las operaciones REST para crear y actualizar información_
 ## ⚡️Class#29✅
