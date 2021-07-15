@@ -15,7 +15,10 @@
 ## Class#7
    ```Patrón de Arquitectura MVC```
 ## Class#8
-   ```Características de los Servlet Los Servlets son componentes o clases de Java del lado del servidor web que permiten procesar peticiones del cliente y responderlas a través de la generación de contenido dinámico o redireccionarlas a otros recursos. Los Servlets de tipo: => HttpServlet son los más utilizados ya que funcionan con el protocolo HTTP (lo encontramos en el paquete javax.servlet.http) pero, también podemos utilizar los => GenericServlets si necesitamos cualquier otro protocolo (el paquete es javax.servlet).```
+   ```Características de los Servlet```
+   * Los Servlets son componentes o clases de Java del lado del servidor web que permiten procesar peticiones del cliente y responderlas a través de la generación de contenido dinámico o redireccionarlas a otros recursos. 
+   * Los Servlets de tipo: => HttpServlet son los más utilizados ya que funcionan con el protocolo HTTP (lo encontramos en el paquete javax.servlet.http) pero, también podemos utilizar los 
+   * GenericServlets si necesitamos cualquier otro protocolo (el paquete es javax.servlet).```
 ## Class#9
    _Utilización del Servlet_
 ## Class#10
