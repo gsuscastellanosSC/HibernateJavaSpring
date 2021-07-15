@@ -1,5 +1,4 @@
-# Platzi
-   * [Curso](https://platzi.com/clases/jee/) - Clases del Curso de Hibernate y Java Spring 2018
+# [Curso](https://platzi.com/clases/jee/) - Clases del Curso de Hibernate y Java Spring 2018
 ## Class#1
    ```Instalar ambiente de desarrollo en Windows```
 ## Class#2
