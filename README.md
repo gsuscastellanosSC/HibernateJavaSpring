@@ -1,5 +1,5 @@
 # Clases del Curso de Hibernate y Java Spring 2018
-   https://platzi.com/clases/jee/
+   * [Introducción a Hibernate](https://platzi.com/clases/jee/)
 ## Class#1
    Instalar ambiente de desarrollo en Windows
 ## Class#2
@@ -128,15 +128,11 @@
    Up postgres:9.6.6-alpine
       docker run -d --name postgres -p 5432:5432 -e POSTGRES_PASSWORD=platzi postgres:9.6.6-alpine
 ## Links
-   Added Springfox Swagger-UI and it's not working, what am I missing:
-      https://stackoverflow.com/questions/46151540/added-springfox-swagger-ui-and-its-not-working-what-am-i-missing/64995810#64995810
-   Lombok:
-      - https://projectlombok.org/download
-      - https://projectlombok.org/mavenrepo/
-   Spring Initializr:
-      https://start.spring.io/
-   platziWeb:
-      - http://127.0.0.1:9090/platziweb/login.jsp
-      - http://127.0.0.1:9090/platziweb/ServletLogin?usuario=platzi&empresa=platzi&empresa=qwerty
-   OmniDB:
-      https://omnidb.org/
+   * [Added Springfox Swagger-UI and it's not working, what am I missing](https://stackoverflow.com/questions/46151540/added-springfox-swagger-ui-and-its-not-working-what-am-i-missing/64995810#64995810) - StackOverflow 
+   * [Lombok](https://projectlombok.org/download) - Download Project Lombok
+   * [mavenrepo](https://projectlombok.org/mavenrepo/) - Mavenrepo Project Lombok
+   * [Spring Initializr](https://start.spring.io/)- Spring Boot
+   * [platziWeb](http://127.0.0.1:9090/platziweb/login.jsp) - Login Platzi Web
+   * [Api](http://127.0.0.1:9090/platziweb/ServletLogin?usuario=platzi&empresa=platzi&empresa=qwerty) - 
+   * [Swagger](http://127.0.0.1:8080/platziweb/swagger-ui.html) - Swagger Api
+   * [OmniDB](https://omnidb.org/) - OmniDB
