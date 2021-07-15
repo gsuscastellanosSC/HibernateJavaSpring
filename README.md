@@ -1,15 +1,15 @@
 # Clases del Curso de Hibernate y Java Spring 2018
    * [Introducción a Hibernate](https://platzi.com/clases/jee/)
 ## Class#1
-   _Instalar ambiente de desarrollo en Windows_
+   ```Instalar ambiente de desarrollo en Windows```
 ## Class#2
-   _Curso de Hibernate y Java Spring 2018_
+   ```Curso de Hibernate y Java Spring 2018```
 ## Class#3
-   _¿Qué es una Aplicación Empresarial?_
+   ```¿Qué es una Aplicación Empresarial?```
 ## Class#4
-   _¿Cómo funcionan las Aplicaciones Web?_
+   ```¿Cómo funcionan las Aplicaciones Web?```
 ## Class#5
-   _Servidores Web vs Servidores de Aplicación_
+   ```Servidores Web vs Servidores de Aplicación```
 ## Class#6
    _Instalar ambiente de desarrollo Mac_
 ## Class#7
