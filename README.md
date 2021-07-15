@@ -1,5 +1,5 @@
 # Clases del Curso de Hibernate y Java Spring 2018
-   * [Introducción a Hibernate](https://platzi.com/clases/jee/)
+   ```[Introducción a Hibernate](https://platzi.com/clases/jee/)```
 ## Class#1
    ```Instalar ambiente de desarrollo en Windows```
 ## Class#2
