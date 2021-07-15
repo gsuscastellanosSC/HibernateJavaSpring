@@ -132,11 +132,3 @@
    * [Api-platziWeb](http://127.0.0.1:9090/platziweb/ServletLogin?usuario=platzi&empresa=platzi&empresa=qwerty) - Login API Platzi Web
    * [Swagger](http://127.0.0.1:8080/platziweb/swagger-ui.html) - Swagger Api
    * [OmniDB](https://omnidb.org/) - OmniDB
-
-
-   
-   
-   
-   
-   
-   [go](http://stackoverflow.com){:target="_blank" rel="noopener"}
