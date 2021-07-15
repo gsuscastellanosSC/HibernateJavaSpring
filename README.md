@@ -11,12 +11,11 @@
 ## Class#5
    ```Servidores Web vs Servidores de Aplicación```
 ## Class#6
-   _Instalar ambiente de desarrollo Mac_
+   ```Instalar ambiente de desarrollo Mac```
 ## Class#7
-   _Patrón de Arquitectura MVC_
+   ```Patrón de Arquitectura MVC```
 ## Class#8
-   _Características de los Servlet_
-      ```Los Servlets son componentes o clases de Java del lado del servidor web que permiten procesar peticiones del cliente y responderlas a través de la generación de contenido dinámico o redireccionarlas a otros recursos. Los Servlets de tipo: => HttpServlet son los más utilizados ya que funcionan con el protocolo HTTP (lo encontramos en el paquete javax.servlet.http) pero, también podemos utilizar los => GenericServlets si necesitamos cualquier otro protocolo (el paquete es javax.servlet).```
+   ```Características de los Servlet Los Servlets son componentes o clases de Java del lado del servidor web que permiten procesar peticiones del cliente y responderlas a través de la generación de contenido dinámico o redireccionarlas a otros recursos. Los Servlets de tipo: => HttpServlet son los más utilizados ya que funcionan con el protocolo HTTP (lo encontramos en el paquete javax.servlet.http) pero, también podemos utilizar los => GenericServlets si necesitamos cualquier otro protocolo (el paquete es javax.servlet).```
 ## Class#9
    _Utilización del Servlet_
 ## Class#10
