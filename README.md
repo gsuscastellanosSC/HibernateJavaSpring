@@ -1,4 +1,4 @@
-# 🚨[Hibernate y Java Spring 2018](https://platzi.com/clases/jee/)🚨
+# 🚨<a href="https://platzi.com/clases/jee/" target="_blank">Hibernate y Java Spring 2018</a>🚨
 ## ✅Class#1⚡️
    ```Instalar ambiente de desarrollo en Windows```
 ## ✅Class#2⚡️
@@ -124,7 +124,7 @@
    ```Up postgres:9.6.6-alpine```
    * docker run -d --name postgres -p 5432:5432 -e POSTGRES_PASSWORD=platzi postgres:9.6.6-alpine
 ## 🚧Links🚨
-   * [Added Springfox Swagger-UI and it's not working, what am I missing](https://stackoverflow.com/questions/46151540/added-springfox-swagger-ui-and-its-not-working-what-am-i-missing/64995810#64995810) - StackOverflow 
+   * <a href="https://stackoverflow.com/questions/46151540/added-springfox-swagger-ui-and-its-not-working-what-am-i-missing/64995810#64995810" target="_blank">Added Springfox Swagger-UI and it's not working, what am I missing</a> - StackOverflow 
    * [Lombok](https://projectlombok.org/download) - Download Project Lombok
    * [mavenrepo](https://projectlombok.org/mavenrepo/) - Mavenrepo Project Lombok
    * [Spring Initializr](https://start.spring.io/)- Spring Boot
