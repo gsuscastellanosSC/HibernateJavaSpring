@@ -126,11 +126,17 @@
 ## 🚧Links🚨
    * <a href="https://stackoverflow.com/questions/46151540/added-springfox-swagger-ui-and-its-not-working-what-am-i-missing/64995810#64995810" target="_blank">Added Springfox Swagger-UI and it's not working, what am I missing</a> - StackOverflow 
    * [Lombok](https://projectlombok.org/download) - Download Project Lombok
-   * [LombokLink](https://projectlombok.org/download "Lombok" target="_blank")
-   * [open new window][1] \n [1]: (https://projectlombok.org/download" target="_blank)
    * [mavenrepo](https://projectlombok.org/mavenrepo/) - Mavenrepo Project Lombok
    * [Spring Initializr](https://start.spring.io/)- Spring Boot
    * [platziWeb](http://127.0.0.1:9090/platziweb/login.jsp) - Login Platzi Web
    * [Api-platziWeb](http://127.0.0.1:9090/platziweb/ServletLogin?usuario=platzi&empresa=platzi&empresa=qwerty) - Login API Platzi Web
    * [Swagger](http://127.0.0.1:8080/platziweb/swagger-ui.html) - Swagger Api
    * [OmniDB](https://omnidb.org/) - OmniDB
+
+
+   
+   
+   
+   
+   
+   [go](http://stackoverflow.com){:target="_blank" rel="noopener"}
