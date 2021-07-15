@@ -110,6 +110,10 @@
 # Class#26
    Instalar y configurar Swagger
       Swagger es una herramienta que nos permite documentar y ejecutar APIs Web de forma interactiva, provee una manera muy sencilla de implementar clientes un múltiples lenguajes. Para configurar esta herramienta junto con Spring, vamos a utilizar el proyecto Spring Fox configurando las dependencias en el archivo pom.xml.
+# Class#27
+   Características de los Servicios Web y Spring Rest
+      Los servicios web son aplicaciones construidas con el fin de poder intercambiar información con otras aplicaciones utilizando protocolos estandarizados como SOAP y REST (utilizando los formatos XML y JSON, respectivamente) sin que los usuarios se enteren de que están navegando entre aplicaciones o servicios diferentes. Este concepto lo conocemos como interoperabilidad.
+      Por otra parte, Spring Rest es una manera de construir servicios web con Spring utilizando la arquitectura REST y aprovechando la experiencia de Spring MVC. Para configurar los servicios web utilizamos la anotación @RestCotroller en la clase base, la cual combina los comportamientos de las anotaciones @Controller y @ResponseBody.
 # Bash
    Run spring:
       mvn clean install spring-boot:run
