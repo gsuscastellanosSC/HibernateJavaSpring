@@ -116,6 +116,8 @@
       Por otra parte, Spring Rest es una manera de construir servicios web con Spring utilizando la arquitectura REST y aprovechando la experiencia de Spring MVC. Para configurar los servicios web utilizamos la anotación @RestCotroller en la clase base, la cual combina los comportamientos de las anotaciones @Controller y @ResponseBody.
 # Class#28
    Implementar las operaciones REST para crear y actualizar información
+# Class#29
+   Implementar las operaciones REST para eliminar y consultar información
 # Bash
    Run spring:
       mvn clean install spring-boot:run
