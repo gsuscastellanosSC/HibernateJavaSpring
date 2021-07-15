@@ -20,10 +20,11 @@
    * Los Servlets de tipo: => HttpServlet son los más utilizados ya que funcionan con el protocolo HTTP (lo encontramos en el paquete javax.servlet.http) pero, también podemos utilizar los 
    * GenericServlets si necesitamos cualquier otro protocolo (el paquete es javax.servlet).```
 ## Class#9
-   _Utilización del Servlet_
+   ```Utilización del Servlet```
 ## Class#10
-   _Características y práctica de JSP_
-      ```Las JSP (JavaServer Page) son componentes del lado del servidor que nos permiten desarrollar páginas web con soporte para contenido dinámico gracias a la inclusión de código Java en código html utilizando los Tags (una sintaxis especial que podemos utilizar en cualquier momento para añadir contenido dinámico: <% for(1=0; i<10: i++) %>). El desafío de esta clase es crear una página con JSP para visualizar la información de los usuarios que se registran.```
+   ```Características y práctica de JSP```
+   * Las JSP (JavaServer Page) son componentes del lado del servidor que nos permiten desarrollar páginas web con soporte para contenido dinámico gracias a la inclusión de código Java en código html utilizando los Tags (una sintaxis especial que podemos utilizar en cualquier momento para añadir contenido dinámico: <% for(1=0; i<10: i++) %>). 
+   * El desafío de esta clase es crear una página con JSP para visualizar la información de los usuarios que se registran.```
 ## Class#11
    _Arquitectura de las Aplicaciones Web_
       ```Así como la construcción de casas, el proceso de construcción de las aplicaciones consiste en 3 etapas: definición de los todos requerimientos y características (lenguaje de programación, tipo de base de datos, practicas de seguridad a implementar, etc), después, el diseño de los componentes y cómo se van a comunicar entre ellos (para darle una vista previa al usuario de cómo vamos a desarrollar la aplicación) y, por ultimo, el desarrollo de nuestra aplicación en base a las decisiones de las etapas anteriores.```
