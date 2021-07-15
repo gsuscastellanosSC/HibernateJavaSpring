@@ -117,14 +117,14 @@
    _Implementar las operaciones REST para eliminar y consultar información_
 ## ⚡️Class#30 ✅
    _Documentación de los servicios REST con Swagger_
-## Bash
+## 🚧Bash 🚨
    ```Run spring:```
    * mvn clean install spring-boot:run
    ```Download postgres:9.6.6-alpine:```
    * docker pull postgres:9.6.6-alpine
    ```Up postgres:9.6.6-alpine```
    * docker run -d --name postgres -p 5432:5432 -e POSTGRES_PASSWORD=platzi postgres:9.6.6-alpine
-## Links
+## 🚧Links 🚨
    * [Added Springfox Swagger-UI and it's not working, what am I missing](https://stackoverflow.com/questions/46151540/added-springfox-swagger-ui-and-its-not-working-what-am-i-missing/64995810#64995810) - StackOverflow 
    * [Lombok](https://projectlombok.org/download) - Download Project Lombok
    * [mavenrepo](https://projectlombok.org/mavenrepo/) - Mavenrepo Project Lombok
