@@ -25,36 +25,36 @@
    * Las JSP (JavaServer Page) son componentes del lado del servidor que nos permiten desarrollar páginas web con soporte para contenido dinámico gracias a la inclusión de código Java en código html utilizando los Tags (una sintaxis especial que podemos utilizar en cualquier momento para añadir contenido dinámico: <% for(1=0; i<10: i++) %>). 
    * El desafío de esta clase es crear una página con JSP para visualizar la información de los usuarios que se registran.```
 ## Class#11
-   _Arquitectura de las Aplicaciones Web_
-      ```Así como la construcción de casas, el proceso de construcción de las aplicaciones consiste en 3 etapas: definición de los todos requerimientos y características (lenguaje de programación, tipo de base de datos, practicas de seguridad a implementar, etc), después, el diseño de los componentes y cómo se van a comunicar entre ellos (para darle una vista previa al usuario de cómo vamos a desarrollar la aplicación) y, por ultimo, el desarrollo de nuestra aplicación en base a las decisiones de las etapas anteriores.```
+   ```Arquitectura de las Aplicaciones Web```
+   * Así como la construcción de casas, el proceso de construcción de las aplicaciones consiste en 3 etapas: definición de los todos requerimientos y características (lenguaje de programación, tipo de base de datos, practicas de seguridad a implementar, etc), después, el diseño de los componentes y cómo se van a comunicar entre ellos (para darle una vista previa al usuario de cómo vamos a desarrollar la aplicación) y, por ultimo, el desarrollo de nuestra aplicación en base a las decisiones de las etapas anteriores.```
 ## Class#12
-   _Características de Spring Framework:_
-      ```Spring Framework es un framework Open Source creado por Rod Jhonson en 2003, fue creado debido a la necesidad de optimizar nuestro código Java y como una alternativa para solucionar la complejidad de otras tecnologías más pesadas en ese momento (especialmente EJB).```
-   _Características de Spring:_
-      ```NO esta limitado al lado del servidor
-      Desarrollo basado en POJOS
-      Bajo acoplamiento
-      Programación declarativa
-      Reducción de código boilerplate
-      Arquitectura en capas```
+   ```Características de Spring Framework:```
+   * Spring Framework es un framework Open Source creado por Rod Jhonson en 2003, fue creado debido a la necesidad de optimizar nuestro código Java y como una alternativa para solucionar la complejidad de otras tecnologías más pesadas en ese momento (especialmente EJB).```
+   ```Características de Spring:```
+   * NO esta limitado al lado del servidor
+   * Desarrollo basado en POJOS
+   * Bajo acoplamiento
+   * Programación declarativa
+   * Reducción de código boilerplate
+   * Arquitectura en capas
 ## Class#13
-   _Características de Spring Boot:_
-      ```Spring Boot es una tecnología que permite optimizar los tiempos de desarrollo en la creación y despliegue de proyectos permitiéndonos a los desarrolladores enfocarnos en el desarrollo de la aplicación. Entre las características que tiene Spring Boot se puede mencionar las siguientes:```
+   ```Características de Spring Boot:```
+   * Spring Boot es una tecnología que permite optimizar los tiempos de desarrollo en la creación y despliegue de proyectos permitiéndonos a los desarrolladores enfocarnos en el desarrollo de la aplicación. Entre las características que tiene Spring Boot se puede mencionar las siguientes:```
 
-   _Aplicaciones Standalone:_
-      ```Una aplicación en Spring Boot es empaquetada en un JAR con todas las dependencias para poder ejecutarsesin          necesidad de instalar un servidor web. Permitiendo funcionar como una aplicaciónstandalone.```
+   ```Aplicaciones Standalone:```
+   * Una aplicación en Spring Boot es empaquetada en un JAR con todas las dependencias para poder ejecutarsesin          necesidad de instalar un servidor web. Permitiendo funcionar como una aplicaciónstandalone.
 
-   _Servidores Embebidos:_
-      ```Spring Boot soporta a Tomcat y Jetty como servidores embebidos.```
+   ```Servidores Embebidos:```
+   * Spring Boot soporta a Tomcat y Jetty como servidores embebidos.
 
-   _Configuración Simple:_
-      ```Spring Boot soporta cada una de las características de los mòdulos de Spring como son Spring MVC,SpringData,          Spring Rest, Spring Security y lo hace de una manera simple, a través dedependenciassimples una sola por cada          tecnologìa. Adicionalmente la forma de construirla y configurarla essimple y óptima de manera online a través         de la herramienta Spring Initializr.```
-
-   _Características de Producción Listas:_
-      ```Spring Boot viene con características de configuración predefinidas para ambientes de producciónAdicionalmente        se puede configurar características de acuerdo a la ambiente a través deSpringProfiles.```
+   ```Configuración Simple:```
+   * Spring Boot soporta cada una de las características de los mòdulos de Spring como son Spring MVC,SpringData, Spring Rest, Spring Security y lo hace de una manera simple, a través dedependenciassimples una sola por cada tecnologìa.Adicionalmente la forma de construirla y configurarla essimple y óptima de manera online a través         de la herramienta Spring Initializr.
+   
+   ```Características de Producción Listas:```
+   * Spring Boot viene con características de configuración predefinidas para ambientes de producciónAdicionalmente        se puede configurar características de acuerdo a la ambiente a través deSpringProfiles.
 ## Class#14
-      _Crear, cargar y configurar una aplicación en Spring Boot:_
-         ```Spring Boot es una infraestructura que nos proporciona un conjunto de herramientas para construir y desplegar aplicaciones muy rápidamente. En nuestro caso, vamos a utilizar Spring Data JPA para manejar la persistencia y Spring Rest para crear una API que podemos utilizar para interactuar desde la capa de vista. Los requerimientos para construir el proyecto de la clase (una aplicación de reservas para hoteles) son el JDK, Maven y un IDE.```
+   ```Crear, cargar y configurar una aplicación en Spring Boot:```
+   * Spring Boot es una infraestructura que nos proporciona un conjunto de herramientas para construir y desplegar aplicaciones muy rápidamente. En nuestro caso, vamos a utilizar Spring Data JPA para manejar la persistencia y Spring Rest para crear una API que podemos utilizar para interactuar desde la capa de vista. Los requerimientos para construir el proyecto de la clase (una aplicación de reservas para hoteles) son el JDK, Maven y un IDE.
 ## Class#15
    _Crear la estructura del proyecto_
       ```Seguimos trabajando con el patrón de diseño MVP (la capa de modelo para trabajar con la base de datos, la capa de negocio para toda la lógica de la aplicación y la capa de vista para el frontend o capa interactiva con el usuario).
