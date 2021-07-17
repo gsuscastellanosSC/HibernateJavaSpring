@@ -117,11 +117,21 @@
 ## ✅Class#30⚡️
    ```Documentación de los servicios REST con Swagger```
 ## ✅Class#31⚡️
-   Manejar la seguridad en una aplicación web
+   ```Manejar la seguridad en una aplicación web```
+
    ```OWASP es un proyecto open source dedicado a determinar y combatir las causas que hacen que el software sea inseguro (enfocado sobre todo a aplicaciones Java y .Net). Al construir aplicaciones web debemos considerar los siguientes factores de seguridad:```
-   * Filtros de Autenticación y Manejo de la Autorización (URLs y contenido al que los usuarios pueden acceder o no dependiendo de sus permisos)
+   * Filtros de Autenticación y 
+   Manejo de la Autorización (URLs y contenido al que los usuarios pueden acceder o no dependiendo de sus permisos)
    * Control de Páginas de Error (configuración de la respuesta que entregamos ante errores tipo 500, 404, entre otros)
    * Envío de peticiones seguras
+## ✅Class#32⚡️
+   ```Características, instalación e integración de Spring Security```
+
+   ```Spring Security es un framework que nos permite gestionar completamente la seguridad de nuestras aplicaciones Java. Entre sus características podemos encontrar las siguientes:```
+   
+   * Gestión de la seguridad en varios niveles
+   * Configuración de seguridad portable
+   * Soporte para múltiples modelos de autenticación (HTTP Basic, LDAP, OAuth, HTTP Digest, entre otros)
 ## 🚧Bash🚨
    ```Run spring:```
    * mvn clean install spring-boot:run
