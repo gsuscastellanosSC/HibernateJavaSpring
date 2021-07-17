@@ -128,7 +128,6 @@
    ```Características, instalación e integración de Spring Security```
 
    ```Spring Security es un framework que nos permite gestionar completamente la seguridad de nuestras aplicaciones Java. Entre sus características podemos encontrar las siguientes:```
-   
    * Gestión de la seguridad en varios niveles
    * Configuración de seguridad portable
    * Soporte para múltiples modelos de autenticación (HTTP Basic, LDAP, OAuth, HTTP Digest, entre otros)
