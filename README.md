@@ -116,6 +116,12 @@
    ```Implementar las operaciones REST para eliminar y consultar información```
 ## ✅Class#30⚡️
    ```Documentación de los servicios REST con Swagger```
+## ✅Class#31⚡️
+   Manejar la seguridad en una aplicación web
+   ```OWASP es un proyecto open source dedicado a determinar y combatir las causas que hacen que el software sea inseguro (enfocado sobre todo a aplicaciones Java y .Net). Al construir aplicaciones web debemos considerar los siguientes factores de seguridad:```
+   * Filtros de Autenticación y Manejo de la Autorización (URLs y contenido al que los usuarios pueden acceder o no dependiendo de sus permisos)
+   * Control de Páginas de Error (configuración de la respuesta que entregamos ante errores tipo 500, 404, entre otros)
+   * Envío de peticiones seguras
 ## 🚧Bash🚨
    ```Run spring:```
    * mvn clean install spring-boot:run
@@ -124,7 +130,7 @@
    ```Up postgres:9.6.6-alpine```
    * docker run -d --name postgres -p 5432:5432 -e POSTGRES_PASSWORD=platzi postgres:9.6.6-alpine
 ## 🚧Links🚨
-   * <a href="https://stackoverflow.com/questions/46151540/added-springfox-swagger-ui-and-its-not-working-what-am-i-missing/64995810#64995810" target="_blank">Added Springfox Swagger-UI and it's not working, what am I missing</a> - StackOverflow 
+   * <a href="https://stackoverflow.com/questions/46151540/added-springfox-swagger-ui-and-its-not-working-what-am-i-missing/64995810#64995810" target="_blank">Added Springfox Swagger-UI and it's not working, what am I missing</a> - StackOverflow
    * [Lombok](https://projectlombok.org/download) - Download Project Lombok
    * [mavenrepo](https://projectlombok.org/mavenrepo/) - Mavenrepo Project Lombok
    * [Spring Initializr](https://start.spring.io/)- Spring Boot
