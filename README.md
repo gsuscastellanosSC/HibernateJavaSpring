@@ -180,6 +180,8 @@ Utilizaremos el motor de plantillas Thymeleaf que se integra muy bien con Spring
       ```Es importante mencionar que el código fuente relacionado a esta lectura la pueden encontrar en el siguiente ```<a href="https://github.com/martosfre/curso_spring_hibernate_platzi/tree/18.PersonalizarLogin" target="_blank">repositorio</a>.
 ## ✅Class#34⚡️
    ```Una vez terminada nuestra aplicación vamos a configurar el plugin de Docker en nuestro archivo pom.xml. Recuerda que debes tener docker instalado y puedes aprender mucho mejor cómo funcionan los despliegues de aplicaciones con contenedores en el Curso de Fundamentos de Docker de Platzi.```
+## ✅Class#35⚡️
+   ```Después de configurar el plugin de Docker vamos a construir una imagen de nuestra aplicación que podremos revisar utilizando el comando docker images. Para construir la imagen debemos crear un archivo application-pro.yaml con la configuración de nuestra aplicación en producción, configurar el nombre del proyecto final en el archivo pom.xml y crear una tarea de ejecución en el IDE.```
 ## 🚧Bash🚨
    ```Run spring:```
    * mvn clean install spring-boot:run
