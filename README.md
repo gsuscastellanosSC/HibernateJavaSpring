@@ -182,6 +182,9 @@ Utilizaremos el motor de plantillas Thymeleaf que se integra muy bien con Spring
    ```Una vez terminada nuestra aplicación vamos a configurar el plugin de Docker en nuestro archivo pom.xml. Recuerda que debes tener docker instalado y puedes aprender mucho mejor cómo funcionan los despliegues de aplicaciones con contenedores en el Curso de Fundamentos de Docker de Platzi.```
 ## ✅Class#35⚡️
    ```Después de configurar el plugin de Docker vamos a construir una imagen de nuestra aplicación que podremos revisar utilizando el comando docker images. Para construir la imagen debemos crear un archivo application-pro.yaml con la configuración de nuestra aplicación en producción, configurar el nombre del proyecto final en el archivo pom.xml y crear una tarea de ejecución en el IDE.```
+## ✅Class#36⚡️
+   ```Subir la aplicación a docker hub```
+   * DockerHub es un repositorio público y gratuito para almacenar nuestra imágenes de docker. Para subir nuestra aplicación al repositorio debemos hacer login desde la consola utilizando el comando docker login y ejecutar el comando docker push <NUESTRA_IMAGEN>:TAG_IMAGEN para completar la subida.
 ## 🚧Bash🚨
    ```Build spring With Docker:```
    * mvn clean install docker:build
