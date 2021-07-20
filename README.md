@@ -189,6 +189,10 @@ Utilizaremos el motor de plantillas Thymeleaf que se integra muy bien con Spring
    ```Ejecutar la aplicación dockerizada```
    * Para ejecutar nuestro contenedor de docker debemos, generar un spring-profile para configurar el ambiente de producción y ejecutar la aplicación con el comando docker run y enviar todas las configuraciones del servidor.
    * Recuerda que puedes aprender mucho mejor cómo funcionan los despliegues de aplicaciones con contenedores en el Curso de Fundamentos de Docker de Platzi.
+## ✅Class#38⚡️
+   ```Despedida del curso```
+
+   ```Felicidades por terminar el Curso de Hibernate y Java Spring. Recuerda que puedes dejar todas tus dudas en el sistema de discusiones y puedes seguir aprendiendo sobre muchas otras herramientas y frameworks para agilizar nuestro trabajo al desarrollar aplicaciones con Java.```
 ## 🚧Bash🚨
    ```Build spring With Docker:```
    * mvn clean install docker:build
