@@ -1,57 +1,81 @@
 # 🚨<a href="https://platzi.com/clases/jee/" target="_blank">Hibernate y Java Spring 2018</a>🚨
 ## ✅Class#1⚡️
-   ```Instalar ambiente de desarrollo en Windows```
+   ```Qué aprenderás sobre Hibernate y Java Spring```
+   ```   
+   En este curso, junto con nuestro profesor Marco Antonio, vamos a aprender a desarrollar aplicaciones Java EE con Spring y Hibernate. Vamos a construir nuestra aplicación sobre un patrón MVC, con documentación de la API y múltiples servicios de Spring Framework.
+   ```
 ## ✅Class#2⚡️
-   ```Curso de Hibernate y Java Spring 2018```
+   ```Instalar ambiente de desarrollo en Windows```
+   * Vamos a instalar las herramientas necesarias para trabajar con Hibernate y Spring. Recuerda verificar la arquitectura de tu computadora para descargar las versiones adecuadas (la puedes encontrar en Control Panel > System Security > System > System Type).
+   * Después de instalar las herramientas (puedes encontrar los links en la sección de enlaces) debemos configurar las variables de entorno con la ruta de instalación de las herramientas, vamos a entrar a Control Panel > System Security > System > Advanced system settings > Environment Variables y vamos a añadir las variables JAVA_HOME y MAVEN_HOME.
+   * También debemos configurar los PATHs para ejecutar nuestro código desde cualquier lugar de nuestra computadora.```
 ## ✅Class#3⚡️
    ```¿Qué es una Aplicación Empresarial?```
+   * Las Aplicaciones están conformadas por 3 componentes principales: La Empresa, sus Requerimientos Funcionales (los procesos, características y features que debemos desarrollar) y la Aplicación Empresarial (la suma de componentes articulados que desarrollan la solución).
+   * También debemos tener en cuenta que las aplicaciones se componen de múltiples componentes modulares y distribuido en capas, es decir, aunque a los usuarios se les presenta la aplicación como un único servicio, puede que diferentes  partes de la aplicación estén construidos sobre lenguajes de programación y bases de datos distintos.
+   * Existen dos tipos de aplicaciones: Aplicaciones a la medida (orientadas a solucionar un problema en especifico) y Aplicaciones Multi Target (desarrolladas para mostrar múltiples servicios a distintos usuarios con diferentes necesidades, así como las redes sociales).
+   * También encontramos características especiales y sensible en este tipo de aplicaciones: el número de usuarios, usuarios concurrentes (una gran cantidad de usuarios conectados al mismo tiempo), respaldos de la información, soporte 24/7 y 365 días al año, entre otras.
 ## ✅Class#4⚡️
    ```¿Cómo funcionan las Aplicaciones Web?```
+   * Normalmente, las aplicaciones web se componen de los siguientes elementos: el cliente (navegadores como Chrome, Firefox y Safari), el servidor web (donde alojamos la aplicación y llegan las peticiones) y la base de datos (donde persistimos toda la información de los usuarios y la aplicación).
+   * Las aplicaciones web se acceden a través de una URL o dirección web, compuesta por los siguientes elementos: Protocolo de comunicación (http:// y https://), el dominio o IP del servidor (en producción encontramos dominios como www.platzi.com y desarrollo vemos 4 números separados por puntos + el puerto 192.168.0.11:8080) y el contexto o sección de la aplicación (por ejemplo, /appventas o /cursos/marca).
+   * Ventajas de las aplicaciones web:
+      * Facilidad para su instalación y actualización
+      * Ahorro de recursos en equipos y dispositivos
+      * Compatibilidad Multiplataforma (independencia del Sistema Operativo)
+      * Soporte para múltiples usuarios concurrentes
+      * Acceso multidispositivo (computadoras, tablets, TV, teléfono móvil, etc)
+      * Soporte para peticiones síncronas y asíncronas
 ## ✅Class#5⚡️
    ```Servidores Web vs Servidores de Aplicación```
+   * Normalmente, los usuarios acceden a las aplicaciones web por medio de un cliente o navegador que envía todos los requerimientos al servidor web que, después de analizar la información, se encarga de realizar algunas consultas a la base datos o procesar la petición de manera adecuada para devolver al navegador la respuesta que generáramos para el usuario.
+   * La mayoría de lenguajes de programación solo disponen de los servidores web, contenedores web encargados de manejar todas las peticiones (como Tomcat, Jetty Server, GlassFish Web Profile, Apache Server en aplicaciones de PHP o Internet Information Server para aplicaciones .NET). Pero, desde la versión 1.4 de Java EE, también utilizamos los servidores de aplicación, servidores donde utilizamos un componente de EJB (Enterprise JavaBeans) que nos permiten manejar la capa de negocios sin descuidar temas como la transaccionalidad y el pull de conexiones.
 ## ✅Class#6⚡️
    ```Instalar ambiente de desarrollo Mac```
 ## ✅Class#7⚡️
    ```Patrón de Arquitectura MVC```
+   * Los Patrones de Arquitectura funcionan a partir de una serie de capas o secciones con sus respectivas responsabilidades, que se comunican entre sí pero deben estar muy bien separadas para agilizar el desarrollo. Gracias a los patrones de arquitectura podemos reducir la duplicación de código y facilitar mantenimiento de la aplicación.
+   * El Patrón de Arquitectura MVC tiene los siguientes elementos:
+      * Capa de Modelo: Organización y estructura de todas las clases o componentes relacionados con la base de datos.
+      * Capa de Negocio: Reglas, análisis y requerimientos funcionales principales o secundarios de la aplicación.
+      * Capa de Vista: Formularios y componentes visuales con los que los usuarios deben interactuar.
 ## ✅Class#8⚡️
    ```Características de los Servlet```
-   * Los Servlets son componentes o clases de Java del lado del servidor web que permiten procesar peticiones del cliente y responderlas a través de la generación de contenido dinámico o redireccionarlas a otros recursos. 
-   * Los Servlets de tipo: => HttpServlet son los más utilizados ya que funcionan con el protocolo HTTP (lo encontramos en el paquete javax.servlet.http) pero, también podemos utilizar los 
-   * GenericServlets si necesitamos cualquier otro protocolo (el paquete es javax.servlet).```
+   ```
+   Los Servlets son componentes o clases de Java del lado del servidor web que permiten procesar peticiones del cliente y responderlas a través de la generación de contenido dinámico o redireccionarlas a otros recursos. Los Servlets de tipo HttpServlet son los más utilizados ya que funcionan con el protocolo HTTP (lo encontramos en el paquete javax.servlet.http) pero, también podemos utilizar los GenericServlets si necesitamos cualquier otro protocolo (el paquete es javax.servlet).
+   ```
 ## ✅Class#9⚡️
    ```Utilización del Servlet```
 ## ✅Class#10⚡️
    ```Características y práctica de JSP```
    * Las JSP (JavaServer Page) son componentes del lado del servidor que nos permiten desarrollar páginas web con soporte para contenido dinámico gracias a la inclusión de código Java en código html utilizando los Tags (una sintaxis especial que podemos utilizar en cualquier momento para añadir contenido dinámico: <% for(1=0; i<10: i++) %>). 
-   * El desafío de esta clase es crear una página con JSP para visualizar la información de los usuarios que se registran.```
+   * El desafío de esta clase es crear una página con JSP para visualizar la información de los usuarios que se registran.
 ## ✅Class#11⚡️
    ```Arquitectura de las Aplicaciones Web```
-   * Así como la construcción de casas, el proceso de construcción de las aplicaciones consiste en 3 etapas: definición de los todos requerimientos y características (lenguaje de programación, tipo de base de datos, practicas de seguridad a implementar, etc), después, el diseño de los componentes y cómo se van a comunicar entre ellos (para darle una vista previa al usuario de cómo vamos a desarrollar la aplicación) y, por ultimo, el desarrollo de nuestra aplicación en base a las decisiones de las etapas anteriores.```
+   ```
+   Así como la construcción de casas, el proceso de construcción de las aplicaciones consiste en 3 etapas: definición de los todos requerimientos y características (lenguaje de programación, tipo de base de datos, practicas de seguridad a implementar, etc), después, el diseño de los componentes y cómo se van a comunicar entre ellos (para darle una vista previa al usuario de cómo vamos a desarrollar la aplicación) y, por ultimo, el desarrollo de nuestra aplicación en base a las decisiones de las etapas anteriores.
+   ```
 ## ✅Class#12⚡️
-   ### Características de Spring Framework:
-   * Spring Framework es un framework Open Source creado por Rod Jhonson en 2003, fue creado debido a la necesidad de optimizar nuestro código Java y como una alternativa para solucionar la complejidad de otras tecnologías más pesadas en ese momento (especialmente EJB).```
-   ```Características de Spring:```
-   * NO esta limitado al lado del servidor
-   * Desarrollo basado en POJOS
-   * Bajo acoplamiento
-   * Programación declarativa
-   * Reducción de código boilerplate
-   * Arquitectura en capas
+   ```Características de Spring Framework```
+   * Spring Framework es un framework Open Source creado por Rod Jhonson en 2003, fue creado debido a la necesidad de optimizar nuestro código Java y como una alternativa para solucionar la complejidad de otras tecnologías más pesadas en ese momento (especialmente EJB).
+   * Características de Spring:
+      * NO esta limitado al lado del servidor
+      * Desarrollo basado en POJOS
+      * Bajo acoplamiento
+      * Programación declarativa
+      * Reducción de código boilerplate
+      * Arquitectura en capas
 ## ✅Class#13⚡️
    ```Características de Spring Boot:```
-   * Spring Boot es una tecnología que permite optimizar los tiempos de desarrollo en la creación y despliegue de proyectos permitiéndonos a los desarrolladores enfocarnos en el desarrollo de la aplicación. Entre las características que tiene Spring Boot se puede mencionar las siguientes:```
-
-   ```Aplicaciones Standalone:```
-   * Una aplicación en Spring Boot es empaquetada en un JAR con todas las dependencias para poder ejecutarsesin          necesidad de instalar un servidor web. Permitiendo funcionar como una aplicaciónstandalone.
-
-   ```Servidores Embebidos:```
-   * Spring Boot soporta a Tomcat y Jetty como servidores embebidos.
-
-   ```Configuración Simple:```
-   * Spring Boot soporta cada una de las características de los mòdulos de Spring como son Spring MVC,SpringData, Spring Rest, Spring Security y lo hace de una manera simple, a través dedependenciassimples una sola por cada tecnologìa.Adicionalmente la forma de construirla y configurarla essimple y óptima de manera online a través         de la herramienta Spring Initializr.
-   
-   ```Características de Producción Listas:```
-   * Spring Boot viene con características de configuración predefinidas para ambientes de producciónAdicionalmente        se puede configurar características de acuerdo a la ambiente a través deSpringProfiles.
+   * Spring Boot es una tecnología que permite optimizar los tiempos de desarrollo en la creación y despliegue de proyectos permitiéndonos a los desarrolladores enfocarnos en el desarrollo de la aplicación. Entre las característicasque tiene Spring Boot se puede mencionar las siguientes:```
+   * Aplicaciones Standalone:
+      * Una aplicación en Spring Boot es empaquetada en un JAR con todas las dependencias para poder ejecutarsesin          necesidad de instalar un servidor web. Permitiendo funcionar como una aplicaciónstandalone.
+   * Servidores Embebidos:
+      * Spring Boot soporta a Tomcat y Jetty como servidores embebidos.
+   * Configuración Simple:
+      * Spring Boot soporta cada una de las características de los mòdulos de Spring como son Spring MVC,SpringData, Spring Rest, Spring Security y lo hace de una manera simple, a través dedependenciassimples una sola por cadatecnologìa.Adicionalmente la forma de construirla y configurarla essimple y óptima de manera online a través         de la herramienta Spring Initializr.
+   * Características de Producción Listas:
+      * Spring Boot viene con características de configuración predefinidas para ambientes de producciónAdicionalmente        se puede configurar características de acuerdo a la ambiente a través deSpringProfiles.
 ## ✅Class#14⚡️
    ```Crear, cargar y configurar una aplicación en Spring Boot:```
    * Spring Boot es una infraestructura que nos proporciona un conjunto de herramientas para construir y desplegar aplicaciones muy rápidamente. En nuestro caso, vamos a utilizar Spring Data JPA para manejar la persistencia y Spring Rest para crear una API que podemos utilizar para interactuar desde la capa de vista. Los requerimientos para construir el proyecto de la clase (una aplicación de reservas para hoteles) son el JDK, Maven y un IDE.
@@ -59,53 +83,71 @@
    ```Crear la estructura del proyecto```
    * Seguimos trabajando con el patrón de diseño MVP (la capa de modelo para trabajar con la base de datos, la capa de negocio para toda la lógica de la aplicación y la capa de vista para el frontend o capa interactiva con el usuario).
    * La estructura de nuestra aplicación parte de un paquete base llamado com.platzi.ereservation que hemos creado gracias a la herramienta de construcción y lo hemos cargado al Spring Tool Suite. Ahora, vamos configurar los paquetes para las capas de modelo, negocio y vista. Recuerda que puedes utilizar la sección de Package Explorer, seleccionar nuestro paquete base, utilizar el atajo Ctrl + N, seleccionar la opción Package y automáticamente vamos a generar el nombre del paquete que podemos modificar según nuestras necesidades (en nuestro caso, los paquetes son com.platzi.ereservation.modelo, com.platzi.ereservation.repository, com.platzi.ereservation.resources, com.platzi.ereservation.services).
-
-   * El desafío de esta clase es crear un proyecto con Spring Boot, cargarlo en el IDE de desarrollo de Spring Tool Suite y adjuntar una captura de pantalla en la sección de comentarios. No olvides que, si todo te fue bien, puedes ayudar a nuestros compañeros con problemas para solucionar el reto.```
+   * El desafío de esta clase es crear un proyecto con Spring Boot, cargarlo en el IDE de desarrollo de Spring Tool Suite y adjuntar una captura de pantalla en la sección de comentarios. No olvides que, si todo te fue bien, puedes ayudar a nuestros compañeros con problemas para solucionar el reto.
 ## ✅Class#16⚡️
    ```Persistencia de Objetos:```
-   *  La información es nuestro bien más preciado e importante, ya que en base a esta gira el desarrollo de nuestro negocio, se toman decisiones y automatizamos procesos. En el mundo del desarrollo de software, cualquier aplicación o plataforma – independientemente de la tecnología – necesita almacenar su información. Y esta debe poder ser recuperada en cualquier momento. A este proceso de almacenar información y poder recuperarla en cualquier momento – de forma íntegra e independientemente el medio de almacenamiento – lo conocemos con el nombre de persistencia.
+   *  La información es nuestro bien más preciado e importante, ya que en base a esta gira el desarrollo de nuestro negocio, se toman decisiones y automatizamos procesos. 
+   * En el mundo del desarrollo de software, cualquier aplicación o plataforma – independientemente de la tecnología – necesita almacenar su información. Y esta debe poder ser recuperada en cualquier momento. 
+   * A este proceso de almacenar información y poder recuperarla en cualquier momento – de forma íntegra e independientemente el medio de almacenamiento – lo conocemos con el nombre de persistencia.
    * Existen varios mecanismos de persistencia: archivos planos, archivos binarios, base de datos relacionales, base de datos documentales, entre otros.
    * A nivel de especificaciones o tecnologías utilizadas en Java para poder persistir información, tenemos las siguientes herramientas:
-   
-   ```JDBC, JPA y ORM```
-   * JDBC es un estándar para enviar solicitudes a la base de datos y obtener información, un conjunto de clases que gestionan la información de la base de datos de forma natural (utilizando sentencias DML y DDL).
-   * JPA es la propuesta estándar de Java sobre cómo convertir los objetos de Java en instrucciones para el manejador de la base de datos. Es por esto que existen muchas herramientas que implementan JPA para ayudarnos a manejar l capa de          persistencia de nuestras aplicaciones: los ORMs.
-   * Existen diferentes ORMs como Hibernate, EclipseLink, ToplLink o Datanucleos. Una de las principales características por la que muchas aplicaciones las utilizan es que pueden mapear un modelo relacional a un modelo de objetos, l que nos          permite persistir la información y gestionar nuestros datos como si fueran objetos. Dicho en otras palabras:
-      ```Los ORMs nos permiten trabajar con bases de datos relacionales usando programación orientada a objetos. JPA es la propuesta estándar de Java que deben implementar los ORMs para interactuar con la base de datos por medio d objetos. Y          todos estos ORMs utilizan JDBC para leer y escribir en la base de datos.```
+   * JDBC, JPA y ORM
+      * JDBC es un estándar para enviar solicitudes a la base de datos y obtener información, un conjunto de clases que gestionan la información de la base de datos de forma natural (utilizando sentencias DML y DDL).
+      * JPA es la propuesta estándar de Java sobre cómo convertir los objetos de Java en instrucciones para el manejador de la base de datos. Es por esto que existen muchas herramientas que implementan JPA para ayudarnos a manejar l capa de          persistencia de nuestras aplicaciones: los ORMs.
+      * Existen diferentes ORMs como Hibernate, EclipseLink, ToplLink o Datanucleos. Una de las principales características por la que muchas aplicaciones las utilizan es que pueden mapear un modelo relacional a un modelo de objetos, l que nos          permite persistir la información y gestionar nuestros datos como si fueran objetos. 
+   * Dicho en otras palabras:
+      * Los ORMs nos permiten trabajar con bases de datos relacionales usando programación orientada a objetos. JPA es la propuesta estándar de Java que deben implementar los ORMs para interactuar con la base de datos por medio d objetos. Y          todos estos ORMs utilizan JDBC para leer y escribir en la base de datos.
 ## ✅Class#17⚡️
    ```Spring Data, Spring Data JPA```
 ## ✅Class#18⚡️
    ```Iniciar la base de datos postgres utilizando Docker```
    * Vamos a ejecutar los siguientes comandos para instalar la base de datos (en cualquier sistema operativo) utilizando Docker y OmniDB:
+      ```
+      docker pull postgres:9.6.6-alpine
+      docker run -d --name postgres -p 5432:5432 -e POSTGRES_PASSWORD=platzi
+      ```
+   * Recuerda que puedes aprender mucho mejor cómo funciona Docker con el Curso de Fundamentos de Docker en Platzi.
 ## ✅Class#19⚡️
    ```Optimizar Pojos con Lombok```
    * Los POJOs (Plain Old Java Objects) son clases simples de Java que no dependen de un framework en especial y Lombok es una librería que nos permite eliminar código repetitivo (Getters y Setters) que todavía estamos obligados a escribir cuando trabajamos con Java.```
-   ```Install lombok in sts:```
-   * Edit into last line of the file SpringToolSuite4.ini:
-         ```-javaagent:C:\Program Files\sts-4.11.0.RELEASE\lombok.jar```
+   * Install lombok in sts:
+      * Edit into last line of the file SpringToolSuite4.ini:
+         ```
+         -javaagent:C:\Program Files\sts-4.11.0.RELEASE\lombok.jar
+         ```
 ## ✅Class#20⚡️
    ```Mapear Tablas de la Base de Datos```
    * El proceso de mapear las tablas de la base de datos a clases en nuestra capa de modelo se conoce como ORM (Object Relational Mapping), vamos a convertir las columnas de las tablas en atributos de las clases y las relaciones entre tablas pasan a ser atributos de tipo objeto o lista de objetos.
-
    * Antes de comenzar debemos configurar las dependencias para la base de datos que vamos a utilizar y el manejo/soporte del administrador de capas de persistencia (JPA) en el archivo pom.xml.
 ## ✅Class#21⚡️
   ```Configurar la persistencia con Hibernate```
-   * Ahora que mapeamos las tablas de nuestra base de datos a clases en nuestra capa de modelo (con los archivos Cliente.java y Reserva.java), vamos a crear el archivo src/main/resources/application.yaml y configurar la información para conectarnos a la base de datos.```
+   ```
+   Ahora que mapeamos las tablas de nuestra base de datos a clases en nuestra capa de modelo (con los archivos Cliente.java y Reserva.java), vamos a crear el archivo src/main/resources/application.yaml y configurar la información para conectarnos a la base de datos.
+   ```
 ## ✅Class#22⚡️
    ```Añadir JPA Repository```
+   ```
+   Los repositorios son la herramienta principal de Spring Data, trabajan sobre una capa de abstracción un poco más alta en las operaciones CRUD y nos evitan el trabajo de crear una clase abstracta con todas las operaciones CRUD relacionadas con la base de datos y, a partir de esta clase, crear una nueva clase para administrar las diferentes entidades. Existen varios repositorios de acuerdo a la tecnología a utilizar, como CrudRepository, JPARepository y MongoRepository (ambos basados en PageAndSortingRepository).
+   ```
 ## ✅Class#23⚡️
    ```Implementar las operaciones de Consulta con JPA Repository```
-   * Spring Data cuenta con soporte para realizar consultas personalizadas basado en los atributos de la clase base que se generan de forma automática en el tiempo de ejecución (Query Generation Strategy). También soporta otro tipo de consultas basadas en JPQL (Java Persistence Query Language) como @Query y @NamedQuery.
+   ```
+   Spring Data cuenta con soporte para realizar consultas personalizadas basado en los atributos de la clase base que se generan de forma automática en el tiempo de ejecución (Query Generation Strategy). También soporta otro tipo de consultas basadas en JPQL (Java Persistence Query Language) como @Query y @NamedQuery.
+   ```
 ## ✅Class#24⚡️
    ```Implementar servicio de negocio para las operaciones CRUD```
-   * Seguimos trabajando en la parte de negocio, ahora que definimos nuestro repositorio, el siguiente paso la parte de servicios (con el paquete com.platzi.ereservation.negocio.service), vamos a trabajar algunas clases para exponer estas operaciones en la capa de negocio. Recuerda que debemos indicar que las clases son un bean de la capa de negocios utilizando la anotación @Service.
+   ```
+   Seguimos trabajando en la parte de negocio, ahora que definimos nuestro repositorio, el siguiente paso la parte de servicios (con el paquete com.platzi.ereservation.negocio.service), vamos a trabajar algunas clases para exponer estas operaciones en la capa de negocio. Recuerda que debemos indicar que las clases son un bean de la capa de negocios utilizando la anotación @Service.
+   ```
 ## ✅Class#25⚡️
    ```Manejar la transaccionalidad de un servicio de negocio```
    * Las transacciones son el conjunto de operaciones que afectan la base de datos (updates o deletes, no se recomienda realizar consultas de solo lectura) y se ejecutan en bloque, es decir, se ejecutan todas con éxito (commit) o no ejecutamos ninguna (rollback). Las transacciones empiezan y terminan a nivel de servicio y nunca a nivel de capa de datos, para indicar que una clase o método será transaccional utilizamos a anotación @Transactional.
    * El desafío de esta clase es completar los servicios de negocio para las tablas restantes.
 ## ✅Class#26⚡️
    ```Instalar y configurar Swagger```
-   * Swagger es una herramienta que nos permite documentar y ejecutar APIs Web de forma interactiva, provee una manera muy sencilla de implementar clientes un múltiples lenguajes. Para configurar esta herramienta junto con Spring, vamos a utilizar el proyecto Spring Fox configurando las dependencias en el archivo pom.xml.
+   ```
+   Swagger es una herramienta que nos permite documentar y ejecutar APIs Web de forma interactiva, provee una manera muy sencilla de implementar clientes un múltiples lenguajes. Para configurar esta herramienta junto con Spring, vamos a utilizar el proyecto Spring Fox configurando las dependencias en el archivo pom.xml.
+   ```
 ## ✅Class#27⚡️
    ```Características de los Servicios Web y Spring Rest```
    * Los servicios web son aplicaciones construidas con el fin de poder intercambiar información con otras aplicaciones utilizando protocolos estandarizados como SOAP y REST (utilizando los formatos XML y JSON, respectivamente) sin que los usuarios se enteren de que están navegando entre aplicaciones o servicios diferentes. Este concepto lo conocemos como interoperabilidad.
@@ -179,20 +221,29 @@ Utilizaremos el motor de plantillas Thymeleaf que se integra muy bien con Spring
 
       ```Es importante mencionar que el código fuente relacionado a esta lectura la pueden encontrar en el siguiente ```<a href="https://github.com/martosfre/curso_spring_hibernate_platzi/tree/18.PersonalizarLogin" target="_blank">repositorio</a>.
 ## ✅Class#34⚡️
-   ```Una vez terminada nuestra aplicación vamos a configurar el plugin de Docker en nuestro archivo pom.xml. Recuerda que debes tener docker instalado y puedes aprender mucho mejor cómo funcionan los despliegues de aplicaciones con contenedores en el Curso de Fundamentos de Docker de Platzi.```
+   ```Realizar la configuración de Docker Plugin```
+   ```
+   Una vez terminada nuestra aplicación vamos a configurar el plugin de Docker en nuestro archivo pom.xml. Recuerda que debes tener docker instalado y puedes aprender mucho mejor cómo funcionan los despliegues de aplicaciones con contenedores en el Curso de Fundamentos de Docker de Platzi.
+   ```
 ## ✅Class#35⚡️
-   ```Después de configurar el plugin de Docker vamos a construir una imagen de nuestra aplicación que podremos revisar utilizando el comando docker images. Para construir la imagen debemos crear un archivo application-pro.yaml con la configuración de nuestra aplicación en producción, configurar el nombre del proyecto final en el archivo pom.xml y crear una tarea de ejecución en el IDE.```
+   ```Crear una imagen docker de la aplicación.```
+   ```
+   Después de configurar el plugin de Docker vamos a construir una imagen de nuestra aplicación que podremos revisar utilizando el comando docker images. Para construir la imagen debemos crear un archivo application-pro.yaml con la configuración de nuestra aplicación en producción, configurar el nombre del proyecto final en el archivo pom.xml y crear una tarea de ejecución en el IDE.
+   ```
 ## ✅Class#36⚡️
    ```Subir la aplicación a docker hub```
-   * DockerHub es un repositorio público y gratuito para almacenar nuestra imágenes de docker. Para subir nuestra aplicación al repositorio debemos hacer login desde la consola utilizando el comando docker login y ejecutar el comando docker push <NUESTRA_IMAGEN>:TAG_IMAGEN para completar la subida.
+   ```
+   DockerHub es un repositorio público y gratuito para almacenar nuestra imágenes de docker. Para subir nuestra aplicación al repositorio debemos hacer login desde la consola utilizando el comando docker login y ejecutar el comando docker push <NUESTRA_IMAGEN>:TAG_IMAGEN para completar la subida.
+   ```
 ## ✅Class#37⚡️
    ```Ejecutar la aplicación dockerizada```
    * Para ejecutar nuestro contenedor de docker debemos, generar un spring-profile para configurar el ambiente de producción y ejecutar la aplicación con el comando docker run y enviar todas las configuraciones del servidor.
    * Recuerda que puedes aprender mucho mejor cómo funcionan los despliegues de aplicaciones con contenedores en el Curso de Fundamentos de Docker de Platzi.
 ## ✅Class#38⚡️
    ```Despedida del curso```
-
-   ```Felicidades por terminar el Curso de Hibernate y Java Spring. Recuerda que puedes dejar todas tus dudas en el sistema de discusiones y puedes seguir aprendiendo sobre muchas otras herramientas y frameworks para agilizar nuestro trabajo al desarrollar aplicaciones con Java.```
+   ```
+   Felicidades por terminar el Curso de Hibernate y Java Spring. Recuerda que puedes dejar todas tus dudas en el sistema de discusiones y puedes seguir aprendiendo sobre muchas otras herramientas y frameworks para agilizar nuestro trabajo al desarrollar aplicaciones con Java.
+   ```
 ## 🚧Bash🚨
    ```Build spring With Docker:```
    * mvn clean install docker:build
