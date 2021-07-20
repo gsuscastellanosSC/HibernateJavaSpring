@@ -183,6 +183,8 @@ Utilizaremos el motor de plantillas Thymeleaf que se integra muy bien con Spring
 ## ✅Class#35⚡️
    ```Después de configurar el plugin de Docker vamos a construir una imagen de nuestra aplicación que podremos revisar utilizando el comando docker images. Para construir la imagen debemos crear un archivo application-pro.yaml con la configuración de nuestra aplicación en producción, configurar el nombre del proyecto final en el archivo pom.xml y crear una tarea de ejecución en el IDE.```
 ## 🚧Bash🚨
+   ```Build spring With Docker:```
+   * mvn clean install docker:build
    ```Run spring:```
    * mvn clean install spring-boot:run
    ```Download postgres:9.6.6-alpine:```

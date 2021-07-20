@@ -86,18 +86,17 @@
 			<plugin>
 				<groupId>io.fabric8</groupId>
 				<artifactId>docker-maven-plugin</artifactId>
-				<version>0.28.0</version>
+				<version>0.21.0</version>
 				<configuration>
 					<images>
 						<image>
 							<name>gsuscastelsc/${project.build.finalName}</name>
 							<build>
 								<from>openjdk:latest</from>
-								<entryPoint>java -Dspring.profiles.active=prod -jar
-									\Users\Jesus.Castellanos\Documents\github\HibernateJavaSpring/application/gsuscastelsc/${project.build.finalName}.jar</entryPoint>
+								<entryPoint>java -Dspring.profiles.active=prod -jar /application/${project.build.finalName}.jar</entryPoint>
 								<assembly>
-									<basedir>/C:\Users\Jesus.Castellanos\Documents\github\HibernateJavaSpring/application/</basedir>
-									<description>artifact</description>
+									<basedir>/application/</basedir>
+									<descriptorRef>artifact</descriptorRef>
 									<inline>
 										<id>assembly</id>
 										<files>
@@ -117,7 +116,7 @@
 							<run>
 								<namingStrategy>alias</namingStrategy>
 							</run>
-							<alias>${project.build.finalName}</alias>
+							<alias>{project.build.finalName}</alias>
 						</image>
 					</images>
 				</configuration>
