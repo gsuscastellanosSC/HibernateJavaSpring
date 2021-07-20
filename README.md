@@ -131,6 +131,53 @@
    * Gestión de la seguridad en varios niveles
    * Configuración de seguridad portable
    * Soporte para múltiples modelos de autenticación (HTTP Basic, LDAP, OAuth, HTTP Digest, entre otros)
+## ✅Class#33⚡️
+   ```Para personalizar la página de Login de nuestra aplicación se deben tener en cuenta las siguientes consideraciones:```
+
+* Es preferible no utilizar las tecnologías de Servlets y JSP dentro de un proyecto de Spring Boot debido a que se tiene algunas limitaciones.
+Utilizaremos el motor de plantillas Thymeleaf que se integra muy bien con Spring.
+* Todo el contenido estático debe ser creado bajo el directorio src/main/resources/static como son las hojas de estilos, imágenes etc.
+* Todas las páginas web deben ser creadas bajo el directorio src/main/resources/templates
+```Teniendo en cuenta esta premisa vamos a construir nuestro Login. Para lo cual se tiene que realizar los siguientes pasos:```
+   1. Instalar la dependencia de Thymeleaf en nuestro pom.xml como se muestra a continuación:
+
+      <img src="https://static.platzi.com/media/user_upload/Captura%20de%20pantalla%202018-12-26%20a%20la%28s%29%2012.28.12-fe005710-95c1-4e91-988a-5539c39eeb06.jpg" alt="Captura de pantalla 2018-12-26 a la(s) 12.28.12.png">
+
+   2. Crear un archivo de estilos llamado styles.css y colocarlo en un directorio llamado css bajo el directorio static:
+
+      <img src="https://static.platzi.com/media/user_upload/Captura%20de%20pantalla%202018-12-26%20a%20la%28s%29%2012.29.18-1a8074b9-fb4a-444d-b1fd-d86cfb8d7fb6.jpg" alt="Captura de pantalla 2018-12-26 a la(s) 12.28.12.png">
+
+   3. Crear dos páginas web una que representará nuestro login y otro para la página de inicio bajo el directorio de templates, las cuales tendrán el nombre de login.html y home.html respectivamente:
+
+      <img src="https://static.platzi.com/media/user_upload/Captura%20de%20pantalla%202018-12-26%20a%20la%28s%29%2012.30.17-517033a2-2860-4c4f-897b-1612a11232fd.jpg" alt="Captura de pantalla 2018-12-26 a la(s) 12.30.17.png">
+
+      ```En la página de login se utiliza el tag th:if para validar parámetro de error cuando las credenciales son incorrectas y presentar el mensaje configurado posteriormente en el controlador de login. Y también se utiliza el tag th:action para determinar a qué recurso se llamará para procesar la petición, el cual es el mismo. Adicionalmente es importante que los nombres de los campos de usuario y clave se llamen username y password.```
+   4. Crear un controlador de vista llamado LoginController.java para validar las peticiones relacionadas con la autentificación y colocarlo en un nuevo paquete llamado com.platzi.ereservation.vista.controllers.
+
+      <img src="https://static.platzi.com/media/user_upload/Captura%20de%20pantalla%202018-12-26%20a%20la%28s%29%2012.33.20-c84d9f89-3136-41e9-b6e0-bbf00a346009.jpg" alt="Captura de pantalla 2018-12-26 a la(s) 12.33.20.png">
+      
+      ```En este controlador se validará dos peticiones la de login y la home a través de la ruta /app/login y /app/home respectivamente. Las cuales se configurarán el clase de seguridad a continuación.```	
+   5. Modificar la clase BasicConfiguration.java que es la clase donde se configure los temas de seguridad para el soporte de Spring Security. En la cual se realizó lo siguiente:
+      * Modificar el método configurar la página de login, error y satisfacción las cuales se enlaza con el controlador Login.
+      
+         <img src="https://static.platzi.com/media/user_upload/Captura%20de%20pantalla%202018-12-26%20a%20la%28s%29%2012.34.47-765c90d9-47ba-4d3f-b6cc-0b257886e3eb.jpg" alt="Captura de pantalla 2018-12-26 a la(s) 12.34.47.png">
+      
+      * Configurar el método de autentificación, para lo cual utilizamos un método en memoria.
+         
+         <img src="https://static.platzi.com/media/user_upload/Captura%20de%20pantalla%202018-12-26%20a%20la%28s%29%2012.35.21-e74862ce-3a73-4a58-b30d-badf32d8bd50.jpg" alt="Captura de pantalla 2018-12-26 a la(s) 12.35.21.png">
+      
+      * Configurar qué rutas de la aplicación se deben excluir del proceso de login, en la cual están todos los recursos estáticos configurados anteriormente. 
+
+         <img src="https://static.platzi.com/media/user_upload/Captura%20de%20pantalla%202018-12-26%20a%20la%28s%29%2012.36.12-be285816-5d52-4118-b3e9-bb42da74f07b.jpg" alt="Captura de pantalla 2018-12-26 a la(s) 12.36.12.png">
+
+   6. Eliminar las propiedades de seguridad relacionadas al nombre de usuario y password en el archivo application.properties. Debido a que se utilizará las definidas en el método de autentificación explicado anteriormente.
+
+      ```Una vez realizado estos pasos, se deberá ejecutar el build del proyecto y se tendrá los siguientes resultados:```
+
+      <img src="https://static.platzi.com/media/user_upload/Captura%20de%20pantalla%202018-12-26%20a%20la%28s%29%2012.36.58-6fd3b215-4033-4c01-89f3-32ecaa646232.jpg" alt="Captura de pantalla 2018-12-26 a la(s) 12.36.58.png">
+      <img src="https://static.platzi.com/media/user_upload/Captura%20de%20pantalla%202018-12-26%20a%20la%28s%29%2012.37.22-c833550b-d033-4736-94a7-41d3650c2b3f.jpg" alt="Captura de pantalla 2018-12-26 a la(s) 12.37.22.png">
+
+      ```Es importante mencionar que el código fuente relacionado a esta lectura la pueden encontrar en el siguiente ```<a href="https://github.com/martosfre/curso_spring_hibernate_platzi/tree/18.PersonalizarLogin" target="_blank">repositorio</a>.
 ## 🚧Bash🚨
    ```Run spring:```
    * mvn clean install spring-boot:run
@@ -139,6 +186,8 @@
    ```Up postgres:9.6.6-alpine```
    * docker run -d --name postgres -p 5432:5432 -e POSTGRES_PASSWORD=platzi postgres:9.6.6-alpine
 ## 🚧Links🚨
+   * <a href="https://www.thymeleaf.org/" target="_blank">Thymeleaf</a>
+   * <a href="https://docs.spring.io/spring-boot/docs/current/reference/html/features.html#features.developing-web-applications" target="_blank">Spring Boot limitaciones</a>
    * <a href="https://stackoverflow.com/questions/46151540/added-springfox-swagger-ui-and-its-not-working-what-am-i-missing/64995810#64995810" target="_blank">Added Springfox Swagger-UI and it's not working, what am I missing</a> - StackOverflow
    * [Lombok](https://projectlombok.org/download) - Download Project Lombok
    * [mavenrepo](https://projectlombok.org/mavenrepo/) - Mavenrepo Project Lombok
