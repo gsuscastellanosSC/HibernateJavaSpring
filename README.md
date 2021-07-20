@@ -185,6 +185,10 @@ Utilizaremos el motor de plantillas Thymeleaf que se integra muy bien con Spring
 ## ✅Class#36⚡️
    ```Subir la aplicación a docker hub```
    * DockerHub es un repositorio público y gratuito para almacenar nuestra imágenes de docker. Para subir nuestra aplicación al repositorio debemos hacer login desde la consola utilizando el comando docker login y ejecutar el comando docker push <NUESTRA_IMAGEN>:TAG_IMAGEN para completar la subida.
+## ✅Class#37⚡️
+   ```Ejecutar la aplicación dockerizada```
+   * Para ejecutar nuestro contenedor de docker debemos, generar un spring-profile para configurar el ambiente de producción y ejecutar la aplicación con el comando docker run y enviar todas las configuraciones del servidor.
+   * Recuerda que puedes aprender mucho mejor cómo funcionan los despliegues de aplicaciones con contenedores en el Curso de Fundamentos de Docker de Platzi.
 ## 🚧Bash🚨
    ```Build spring With Docker:```
    * mvn clean install docker:build
